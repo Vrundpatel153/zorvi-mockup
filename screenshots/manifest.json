@@ -1,0 +1,332 @@
+[
+  {
+    "id": "step_00",
+    "file": "step_00_email_verification.jpg",
+    "title": "Email Verification Notice",
+    "timestamp": "00:00",
+    "progress": "Pre-Onboarding",
+    "category": "Auth",
+    "description": "Initial verification screen requiring email confirmation before entering workspace.",
+    "friction": "External email dependency before product access."
+  },
+  {
+    "id": "step_01",
+    "file": "step_01_signin_signup.jpg",
+    "title": "Sign In / Product Capabilities Overview",
+    "timestamp": "00:05",
+    "progress": "Pre-Onboarding",
+    "category": "Auth",
+    "description": "Hero screen highlighting Zorvi features (AI Generation, Multi-brand, Remotion video, Pitch decks).",
+    "friction": "Standard sign-in credentials entry."
+  },
+  {
+    "id": "step_02",
+    "file": "step_02_credentials_input.jpg",
+    "title": "User Credentials Entry",
+    "timestamp": "00:15",
+    "progress": "Pre-Onboarding",
+    "category": "Auth",
+    "description": "User entering credentials (vhp1535@gmail.com).",
+    "friction": "Manual form completion."
+  },
+  {
+    "id": "step_03",
+    "file": "step_03_goal_focus_selection.jpg",
+    "title": "Goal: What do you want to create?",
+    "timestamp": "00:30",
+    "progress": "9% (3m left)",
+    "category": "Intent",
+    "description": "Wizard Step 1: Broad focus selection (Social Media, Blog Content, Video Content, Everything).",
+    "friction": "Selecting Everything triggers an overwhelming deluge of sub-questions."
+  },
+  {
+    "id": "step_04",
+    "file": "step_04_more_details_multiselect.jpg",
+    "title": "More Details: Granular Deliverables",
+    "timestamp": "00:45",
+    "progress": "18% (3m left)",
+    "category": "Deliverables",
+    "description": "Step 2: 15+ checkboxes across Social Platforms, Blog Types, and Video Types.",
+    "friction": "High cognitive load; forces user to configure sub-options too early."
+  },
+  {
+    "id": "step_05",
+    "file": "step_05_account_type.jpg",
+    "title": "Account Type: How will you be working?",
+    "timestamp": "00:55",
+    "progress": "27% (2m left)",
+    "category": "Setup",
+    "description": "Step 3: Personal (Solo creator), Company (Team), Agency (Multiple clients).",
+    "friction": "Separate screen for a 1-click question that could be merged."
+  },
+  {
+    "id": "step_06",
+    "file": "step_06_role_selection.jpg",
+    "title": "About You: What is your role?",
+    "timestamp": "01:03",
+    "progress": "36% (2m left)",
+    "category": "Profile",
+    "description": "Step 4: Role selection (Business Owner, Marketing Manager, Content Creator, Founder, HR, Other).",
+    "friction": "Another separate qualification screen before experiencing the app."
+  },
+  {
+    "id": "step_07",
+    "file": "step_07_team_size.jpg",
+    "title": "Team Size: Scale of organization",
+    "timestamp": "01:08",
+    "progress": "45% (2m left)",
+    "category": "Scale",
+    "description": "Step 5: Just me, 2-10, 11-50, 50+.",
+    "friction": "Redundant organizational scale question right after account type and role."
+  },
+  {
+    "id": "step_08",
+    "file": "step_08_current_tools.jpg",
+    "title": "Current Tools: Competitor Ecosystem",
+    "timestamp": "01:17",
+    "progress": "64% (1m left)",
+    "category": "Ecosystem",
+    "description": "Step 6: 18 tool badges (Buffer, Hootsuite, ChatGPT, Claude, Jasper, etc.) plus search/add.",
+    "friction": "Market research survey for internal company benefit, zero value for the user."
+  },
+  {
+    "id": "step_09",
+    "file": "step_09_brand_url_input.jpg",
+    "title": "Create Brand: URL Input",
+    "timestamp": "01:25",
+    "progress": "73% (1m left)",
+    "category": "Brand",
+    "description": "Step 7: Enter website URL (zorvi.ai) for automatic AI extraction.",
+    "friction": "Requires manual URL input and triggers heavy synchronous scraper."
+  },
+  {
+    "id": "step_10",
+    "file": "step_10_brand_analysis_wait_1.jpg",
+    "title": "Brand Analysis: Connecting & Screenshot",
+    "timestamp": "01:34",
+    "progress": "73% (1m left)",
+    "category": "Latency Blocker",
+    "description": "Step 8: AI connects to website; displays Estimated time remaining: 3m 0s.",
+    "friction": "SEVERE BLOCKER: User forced to wait 1-3 minutes looking at a progress bar."
+  },
+  {
+    "id": "step_11",
+    "file": "step_11_brand_analysis_wait_2.jpg",
+    "title": "Brand Analysis: Colors & Font Extraction",
+    "timestamp": "01:49",
+    "progress": "73% (1m left)",
+    "category": "Latency Blocker",
+    "description": "Step 8: Extracts screenshot, colors, and typography.",
+    "friction": "Notice: This usually takes 1-2 minutes. Over 50% abandonment here."
+  },
+  {
+    "id": "step_12",
+    "file": "step_12_brand_voice_typography.jpg",
+    "title": "Brand Voice & Typography Review",
+    "timestamp": "02:03",
+    "progress": "73% (1m left)",
+    "category": "Brand Config",
+    "description": "Step 9: Review Plus Jakarta Sans fonts, 7 voice tones, and 10 adjective tags.",
+    "friction": "Massive administrative form presented before creating any content."
+  },
+  {
+    "id": "step_13",
+    "file": "step_13_brand_services_products.jpg",
+    "title": "Extracted Products & Services Review",
+    "timestamp": "02:11",
+    "progress": "73% (1m left)",
+    "category": "Brand Config",
+    "description": "Step 9: Review extracted Starter Plan (/mo), Pro Plan, and service tiers.",
+    "friction": "Unnecessary upfront complexity for content creation workflows."
+  },
+  {
+    "id": "step_14",
+    "file": "step_14_brand_confirmation.jpg",
+    "title": "Brand Creation Confirmation",
+    "timestamp": "02:17",
+    "progress": "73% (1m left)",
+    "category": "Brand Config",
+    "description": "Step 9: Finalize brand confirmation button (Looks Good! Create Brand).",
+    "friction": "Still stuck at 73% progress despite completing brand setup."
+  },
+  {
+    "id": "step_15",
+    "file": "step_15_audience_quiz_q1.jpg",
+    "title": "Audience Quiz Q1/10: TikTok Demographics",
+    "timestamp": "02:24",
+    "progress": "82% (1m left)",
+    "category": "Survey Quiz",
+    "description": "Step 10: Age range on TikTok (13-17, 18-24, 25-34, Other).",
+    "friction": "SURVEY FATIGUE: Beginning of a 10-question sequential survey."
+  },
+  {
+    "id": "step_16",
+    "file": "step_16_audience_quiz_q2.jpg",
+    "title": "Audience Quiz Q2/10: Instagram Reels Format",
+    "timestamp": "02:33",
+    "progress": "82% (1m left)",
+    "category": "Survey Quiz",
+    "description": "Step 10: Preferred Reels content (Entertainment, Educational, Trends, Tutorials).",
+    "friction": "Repetitive platform-by-platform interrogation."
+  },
+  {
+    "id": "step_17",
+    "file": "step_17_audience_quiz_q3.jpg",
+    "title": "Audience Quiz Q3/10: LinkedIn Style",
+    "timestamp": "02:48",
+    "progress": "82% (1m left)",
+    "category": "Survey Quiz",
+    "description": "Step 10: Content style on LinkedIn (Insights, Industry news, Company updates).",
+    "friction": "User feels trapped in a never-ending questionnaire."
+  },
+  {
+    "id": "step_18",
+    "file": "step_18_audience_quiz_q4.jpg",
+    "title": "Audience Quiz Q4/10: YouTube Video Length",
+    "timestamp": "02:49",
+    "progress": "82% (1m left)",
+    "category": "Survey Quiz",
+    "description": "Step 10: Video duration preferences (<1m, 1-3m, 4-10m, 10m+).",
+    "friction": "Progress bar remains frozen at 82%."
+  },
+  {
+    "id": "step_19",
+    "file": "step_19_audience_quiz_q5.jpg",
+    "title": "Audience Quiz Q5/10: Blog Reading Time",
+    "timestamp": "02:57",
+    "progress": "82% (1m left)",
+    "category": "Survey Quiz",
+    "description": "Step 10: When do you usually read blogs? (Morning, Afternoon, Evening, Late night).",
+    "friction": "Irrelevant question for drafting business copy."
+  },
+  {
+    "id": "step_20",
+    "file": "step_20_audience_quiz_q6.jpg",
+    "title": "Audience Quiz Q6/10: Twitter Follow Motivations",
+    "timestamp": "03:03",
+    "progress": "82% (1m left)",
+    "category": "Survey Quiz",
+    "description": "Step 10: Motivation to follow brands (Informative, Engaging, Customer service).",
+    "friction": "Feels like academic market research."
+  },
+  {
+    "id": "step_21",
+    "file": "step_21_audience_quiz_q7.jpg",
+    "title": "Audience Quiz Q7/10: SaaS on Facebook Frustrations",
+    "timestamp": "03:10",
+    "progress": "82% (1m left)",
+    "category": "Survey Quiz",
+    "description": "Step 10: Bizarre auto-generated question about SaaS pain points on Facebook.",
+    "friction": "High confusion and low relevance."
+  },
+  {
+    "id": "step_22",
+    "file": "step_22_audience_quiz_q8.jpg",
+    "title": "Audience Quiz Q8/10: Medium Article Preferences",
+    "timestamp": "03:18",
+    "progress": "82% (1m left)",
+    "category": "Survey Quiz",
+    "description": "Step 10: Deep dive articles, Listicles, Opinion pieces, How-to guides.",
+    "friction": "Yet another reading preference question."
+  },
+  {
+    "id": "step_23",
+    "file": "step_23_audience_quiz_q9.jpg",
+    "title": "Audience Quiz Q9/10: Threads Content Style",
+    "timestamp": "03:26",
+    "progress": "82% (1m left)",
+    "category": "Survey Quiz",
+    "description": "Step 10: Casual discussions, In-depth analysis, Quick updates.",
+    "friction": "Redundant with Twitter/X question."
+  },
+  {
+    "id": "step_24",
+    "file": "step_24_persona_generation_wait.jpg",
+    "title": "Persona Generation Loading Screen",
+    "timestamp": "03:32",
+    "progress": "82% (1m left)",
+    "category": "Latency Blocker",
+    "description": "Step 10: Building your audience personas (Progress: 60%).",
+    "friction": "Another spinner delaying the user."
+  },
+  {
+    "id": "step_25",
+    "file": "step_25_personas_review.jpg",
+    "title": "Audience Personas Review",
+    "timestamp": "03:40",
+    "progress": "82% (1m left)",
+    "category": "Personas",
+    "description": "Step 11: Young Marketing Professionals and Lifestyle Bloggers cards.",
+    "friction": "Abstract persona cards shown with no content attached."
+  },
+  {
+    "id": "step_26",
+    "file": "step_26_content_strategies_review.jpg",
+    "title": "Content Strategy & Calendar Review",
+    "timestamp": "03:54",
+    "progress": "82% (1m left)",
+    "category": "Strategy",
+    "description": "Step 12: Blog Insights for B2B Tech Decision Makers cards.",
+    "friction": "Progress bar still stuck at 82% after 8+ minutes."
+  },
+  {
+    "id": "step_27",
+    "file": "step_27_invite_team.jpg",
+    "title": "Invite Team Members Screen",
+    "timestamp": "04:02",
+    "progress": "91% (1m left)",
+    "category": "Viral Loop",
+    "description": "Step 13: Invite teammates by email before seeing product value.",
+    "friction": "Premature virality ask. Users refuse to invite peers before verifying tool."
+  },
+  {
+    "id": "step_28",
+    "file": "step_28_dashboard_arrival.jpg",
+    "title": "Arrival on Zorvi Home Dashboard",
+    "timestamp": "04:06",
+    "progress": "100% Completed",
+    "category": "Dashboard",
+    "description": "Empty dashboard with zero drafts, zero review, zero published.",
+    "friction": "EMPTY STATE SHOCK: No dopamine or pre-generated content waiting."
+  },
+  {
+    "id": "step_29",
+    "file": "step_29_tour_step_1_ai_briefing.jpg",
+    "title": "Dashboard Tour 1/9: AI Briefing Tooltip",
+    "timestamp": "04:08",
+    "progress": "Tour 1/9",
+    "category": "Product Tour",
+    "description": "Create your first piece of content modal over dashboard.",
+    "friction": "9-step modal obstacle course right after a 9-minute onboarding."
+  },
+  {
+    "id": "step_30",
+    "file": "step_30_tour_step_2_agent_library.jpg",
+    "title": "Dashboard Tour 2/9: Agent Library Highlight",
+    "timestamp": "04:10",
+    "progress": "Tour 2/9",
+    "category": "Product Tour",
+    "description": "Popover pointing to Agent Library in sidebar.",
+    "friction": "Passive tooltip tour."
+  },
+  {
+    "id": "step_31",
+    "file": "step_31_tour_step_4_content.jpg",
+    "title": "Dashboard Tour 4/9: Content Tools Section",
+    "timestamp": "04:13",
+    "progress": "Tour 4/9",
+    "category": "Product Tour",
+    "description": "Popover highlighting Content management in sidebar.",
+    "friction": "Repetitive sidebar explanations."
+  },
+  {
+    "id": "step_32",
+    "file": "step_32_final_dashboard_state.jpg",
+    "title": "Final Workspace State (Zorvi AI v1.7.0)",
+    "timestamp": "04:24",
+    "progress": "Workspace Ready",
+    "category": "Dashboard",
+    "description": "Complete Zorvi UI with sidebar, content pipeline, upcoming publishes, plans.",
+    "friction": "User has spent nearly 10 minutes and still has 0 active drafts in pipeline."
+  }
+]

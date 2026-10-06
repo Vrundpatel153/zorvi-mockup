@@ -3,999 +3,1151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zorvi AI — Next-Gen 5-Step Onboarding Architecture & Interactive Mockup</title>
-  <meta name="description" content="Ultra-fast, high-converting 5-step onboarding flow redesign for Zorvi AI. Transforms a 10-minute 14-screen survey into a 55-second delight delivering instant magic moment content.">
-  
-  <!-- Modern Typography from Google Fonts -->
+  <title>Zorvi AI — Next-Gen Onboarding Suite (4 Interactive Mockups & Audit)</title>
+  <meta name="description" content="Next-generation, ultra-fast 5-step onboarding design system for Zorvi AI. Featuring 4 distinct world-class UI/UX mockup variants, live device preview canvas, and full 33-step forensic audit.">
+
+  <!-- Google Fonts: Outfit (Display) & Plus Jakarta Sans (Body) & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="theme-light">
-  <!-- App Shell Header -->
-  <header class="app-header" id="appHeader">
-    <div class="header-inner container">
-      <!-- Brand Monogram & Title -->
-      <div class="brand-group">
-        <div class="brand-monogram">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M4 6L18 6L7 18L21 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="brand-titles">
-          <span class="brand-name">Zorvi<span class="brand-accent">.ai</span></span>
-          <span class="brand-tagline">Onboarding Redesign</span>
-        </div>
-        <span class="badge badge-pulse">v2.0 Architecture</span>
+  <!-- Ambient Atmospheric Mesh Glows -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
+
+  <!-- Master Navigation Header -->
+  <header class="master-header" id="masterHeader">
+    <div class="header-container container">
+      <!-- Brand Monogram -->
+      <div class="brand-cluster">
+        <a href="#" class="brand-link" id="brandHomeLink">
+          <div class="brand-symbol">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M4 6L18 6L7 18L21 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">Zorvi<span class="brand-coral">.ai</span></span>
+            <span class="brand-edition">Design Studio v2.0</span>
+          </div>
+        </a>
       </div>
 
-      <!-- Center View Switcher -->
-      <nav class="view-switcher" aria-label="Main Navigation">
-        <button type="button" class="nav-tab active" id="tabWizard" data-view="wizard">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          <span>5-Step Flow</span>
-        </button>
-        <button type="button" class="nav-tab" id="tabDashboard" data-view="dashboard">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-          <span>Dashboard View</span>
-        </button>
-        <button type="button" class="nav-tab" id="tabInspector" data-view="inspector">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          <span>Original Flow Audit (33 Steps)</span>
-        </button>
-        <button type="button" class="nav-tab" id="tabAnalytics" data-view="analytics">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-          <span>ROI & Metrics</span>
-        </button>
+      <!-- Center: 4 Design Variants Switcher -->
+      <nav class="variant-switcher-bar" aria-label="Mockup Design Variants">
+        <div class="switcher-label">Mockup:</div>
+        <div class="variant-pills-wrap">
+          <button type="button" class="variant-pill active" data-variant="split" id="pillVariantSplit" title="Variant 1: Split-Screen Live Studio">
+            <span class="v-icon">🪟</span>
+            <span class="v-name">1. Split Studio</span>
+            <span class="v-tag">Recommended</span>
+          </button>
+          <button type="button" class="variant-pill" data-variant="zen" id="pillVariantZen" title="Variant 2: Keyboard-First Zen Flow">
+            <span class="v-icon">⚡</span>
+            <span class="v-name">2. Zen Flow</span>
+          </button>
+          <button type="button" class="variant-pill" data-variant="bento" id="pillVariantBento" title="Variant 3: Modular Bento Cockpit">
+            <span class="v-icon">🍱</span>
+            <span class="v-name">3. Bento Grid</span>
+          </button>
+          <button type="button" class="variant-pill" data-variant="cinematic" id="pillVariantCinematic" title="Variant 4: Cinematic Carousel Deck">
+            <span class="v-icon">🎬</span>
+            <span class="v-name">4. Cinematic</span>
+          </button>
+        </div>
       </nav>
 
-      <!-- Right Header Actions -->
-      <div class="header-actions">
-        <!-- Benchmark Speed Clock -->
-        <div class="benchmark-pill" title="Time to complete compared to original 9m 30s flow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <span>Flow Time: <strong id="flowTimer">00:48</strong> <em class="saving">(Save 8m 42s)</em></span>
+      <!-- Right Header Controls -->
+      <div class="header-right-tools">
+        <!-- Companion View Dropdown / Tabs -->
+        <div class="companion-nav">
+          <button type="button" class="comp-btn" id="btnViewDashboard" data-view="dashboard" title="Post-Onboarding Workspace View">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            <span>Dashboard</span>
+          </button>
+          <button type="button" class="comp-btn" id="btnViewAudit" data-view="audit" title="View all 33 original screenshots extracted from video">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span>33-Step Audit</span>
+          </button>
+          <button type="button" class="comp-btn" id="btnViewROI" data-view="roi" title="View ROI impact benchmarks">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            <span>ROI</span>
+          </button>
         </div>
 
-        <!-- Theme Toggle -->
-        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme">
-          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <!-- Live Session StopWatch -->
+        <div class="flow-stopwatch" title="Active Flow Duration">
+          <span class="pulse-dot"></span>
+          <span class="stopwatch-time" id="stopwatchDisplay">00:48</span>
+          <span class="stopwatch-sub">(Save 8m 42s)</span>
+        </div>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button type="button" class="theme-switch-btn" id="themeSwitchBtn" aria-label="Toggle theme">
+          <span class="theme-icon sun-icon">☀️</span>
+          <span class="theme-icon moon-icon">🌙</span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Main View Container -->
-  <main class="main-content" id="mainContent">
+  <!-- Master Main Stage -->
+  <main class="master-main" id="masterMain">
 
-    <!-- ========================================== -->
-    <!-- VIEW 1: THE OPTIMIZED 5-STEP WIZARD -->
-    <!-- ========================================== -->
-    <section class="view-panel active" id="viewWizard">
-      <div class="wizard-wrapper container">
+    <!-- ==================================================================== -->
+    <!-- MOCKUP VARIANT 1: THE SPLIT-SCREEN CO-CREATION STUDIO               -->
+    <!-- ==================================================================== -->
+    <section class="mockup-variant-stage active" id="stageVariantSplit">
+      <div class="split-studio-container container">
         
-        <!-- Onboarding Progress Tracker Card -->
-        <div class="wizard-header-card">
-          <div class="tracker-top">
-            <div class="step-meta">
-              <span class="step-badge" id="stepCounterBadge">Step 1 of 5</span>
-              <h1 class="step-title" id="stepHeaderTitle">What is your primary content objective?</h1>
+        <!-- Left Pane: 5-Step Control Cockpit (45%) -->
+        <div class="studio-cockpit-pane">
+          <!-- Wizard Floating Header -->
+          <div class="cockpit-progress-card">
+            <div class="progress-topline">
+              <div class="step-tag-row">
+                <span class="cockpit-badge" id="splitStepBadge">Step 1 of 5</span>
+                <span class="time-est" id="splitTimeEst">⚡ ~45s to first campaign</span>
+              </div>
+              <h1 class="cockpit-heading" id="splitStepHeading">What is your primary content objective?</h1>
             </div>
-            <div class="time-estimate">
-              <span class="est-icon">⚡</span>
-              <span class="est-text"><strong id="timeRemaining">~45 seconds</strong> to your first AI campaign</span>
+
+            <!-- Glowing Stepper Track -->
+            <div class="stepper-bar-track">
+              <div class="stepper-bar-fill" id="splitProgressBar" style="width: 20%;">
+                <span class="bar-shine"></span>
+              </div>
+            </div>
+
+            <!-- 5 Quick Dots -->
+            <div class="stepper-dots-row" id="splitDotsRow">
+              <button type="button" class="step-dot-btn active" data-step="1"><span class="d-num">1</span><span class="d-txt">Intent</span></button>
+              <button type="button" class="step-dot-btn" data-step="2"><span class="d-num">2</span><span class="d-txt">Brand</span></button>
+              <button type="button" class="step-dot-btn" data-step="3"><span class="d-num">3</span><span class="d-txt">Audience</span></button>
+              <button type="button" class="step-dot-btn" data-step="4"><span class="d-num">4</span><span class="d-txt">Copilot</span></button>
+              <button type="button" class="step-dot-btn" data-step="5"><span class="d-num">5</span><span class="d-txt">Launch</span></button>
             </div>
           </div>
 
-          <!-- Progress Bar with Glowing Head -->
-          <div class="progress-track" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-fill" id="progressFill" style="width: 20%;">
-              <span class="progress-glow"></span>
-            </div>
-          </div>
-
-          <!-- 5 Steps Quick Nav Dots -->
-          <div class="steps-nav-dots" id="stepsNavDots">
-            <button type="button" class="dot active" data-step="1" title="Step 1: Focus & Archetype">
-              <span class="dot-num">1</span>
-              <span class="dot-label">Intent</span>
-            </button>
-            <button type="button" class="dot" data-step="2" title="Step 2: Instant Brand Extraction">
-              <span class="dot-num">2</span>
-              <span class="dot-label">Brand</span>
-            </button>
-            <button type="button" class="dot" data-step="3" title="Step 3: Audience Matrix">
-              <span class="dot-num">3</span>
-              <span class="dot-label">Audience</span>
-            </button>
-            <button type="button" class="dot" data-step="4" title="Step 4: AI Copilot & Channels">
-              <span class="dot-num">4</span>
-              <span class="dot-label">Copilot</span>
-            </button>
-            <button type="button" class="dot" data-step="5" title="Step 5: Magic Generation">
-              <span class="dot-num">5</span>
-              <span class="dot-label">Generate</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- The Interactive Wizard Form Container -->
-        <div class="wizard-card-body" id="wizardCardBody">
-
-          <!-- --------------------------------------- -->
-          <!-- STEP 1: GOAL & ARCHETYPE (10 SECONDS) -->
-          <!-- --------------------------------------- -->
-          <div class="step-pane active" id="paneStep1" data-step-id="1">
-            <div class="pane-intro">
-              <span class="eyebrow-tag">STEP 1 • WORKSPACE INTENT</span>
-              <h2>Pick your creator archetype</h2>
-              <p class="pane-desc">We automatically pre-configure your channel integrations, templates, and AI models so you don't have to fill out 20 manual checkboxes.</p>
-            </div>
-
-            <!-- 4 Archetype Cards -->
-            <div class="archetype-grid">
-              <div class="archetype-card active" data-archetype="creator" id="archCreator">
-                <div class="card-radio-indicator"></div>
-                <div class="arch-icon-wrap">
-                  <span class="arch-emoji">🚀</span>
-                </div>
-                <div class="arch-content">
-                  <div class="arch-header-row">
-                    <h3>Solo Creator & Influencer</h3>
-                    <span class="arch-pill">High Velocity</span>
-                  </div>
-                  <p class="arch-text">Designed for personal brands, YouTubers, and consultants publishing weekly.</p>
-                  <div class="arch-defaults">
-                    <span class="chip">LinkedIn</span>
-                    <span class="chip">Instagram Reels</span>
-                    <span class="chip">X / Twitter</span>
-                    <span class="chip">Viral Hooks</span>
-                  </div>
-                </div>
+          <!-- Wizard Interactive Body -->
+          <div class="cockpit-body-card">
+            <!-- Step 1 Pane -->
+            <div class="cockpit-step-panel active" id="splitPane1" data-panel="1">
+              <div class="panel-header-sub">
+                <span class="section-tag">Step 1 • Workspace Intent</span>
+                <h2>Select your creator archetype</h2>
+                <p>One click auto-configures your channels, models, and templates. Replaces 5 redundant screens.</p>
               </div>
 
-              <div class="archetype-card" data-archetype="startup" id="archStartup">
-                <div class="card-radio-indicator"></div>
-                <div class="arch-icon-wrap">
-                  <span class="arch-emoji">⚡</span>
-                </div>
-                <div class="arch-content">
-                  <div class="arch-header-row">
-                    <h3>Startup & Growth Team</h3>
-                    <span class="arch-pill">B2B Authority</span>
-                  </div>
-                  <p class="arch-text">Built for founders and marketing leads scaling multi-channel inbound growth.</p>
-                  <div class="arch-defaults">
-                    <span class="chip">SEO Blogs</span>
-                    <span class="chip">B2B LinkedIn</span>
-                    <span class="chip">Product Launches</span>
-                    <span class="chip">Pitch Decks</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="archetype-card" data-archetype="agency" id="archAgency">
-                <div class="card-radio-indicator"></div>
-                <div class="arch-icon-wrap">
-                  <span class="arch-emoji">🏢</span>
-                </div>
-                <div class="arch-content">
-                  <div class="arch-header-row">
-                    <h3>Agency & Multi-Brand</h3>
-                    <span class="arch-pill">Multi-Tenant</span>
-                  </div>
-                  <p class="arch-text">Manage separate client brand voices, approval workflows, and bulk queues.</p>
-                  <div class="arch-defaults">
-                    <span class="chip">Multi-Brand Workspaces</span>
-                    <span class="chip">Approval Pipelines</span>
-                    <span class="chip">Client Calendars</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="archetype-card" data-archetype="enterprise" id="archEnterprise">
-                <div class="card-radio-indicator"></div>
-                <div class="arch-icon-wrap">
-                  <span class="arch-emoji">🌐</span>
-                </div>
-                <div class="arch-content">
-                  <div class="arch-header-row">
-                    <h3>Full Content Suite</h3>
-                    <span class="arch-pill">Enterprise Omni</span>
-                  </div>
-                  <p class="arch-text">Complete access to automated Remotion video renders, audio avatars, and all channels.</p>
-                  <div class="arch-defaults">
-                    <span class="chip">Remotion Video</span>
-                    <span class="chip">Ghost / Medium / WP</span>
-                    <span class="chip">Custom Fine-Tuning</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Optional Granular Customizer Accordion -->
-            <div class="collapsible-customizer">
-              <button type="button" class="customizer-trigger" id="customizerTrigger">
-                <span>Want to customize specific channels & formats? (Optional)</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-              </button>
-              <div class="customizer-body" id="customizerBody" style="display: none;">
-                <div class="quick-tags-group">
-                  <label class="tag-toggle active"><input type="checkbox" checked value="linkedin"> LinkedIn</label>
-                  <label class="tag-toggle active"><input type="checkbox" checked value="x"> X (Twitter)</label>
-                  <label class="tag-toggle active"><input type="checkbox" checked value="instagram"> Instagram Reels</label>
-                  <label class="tag-toggle"><input type="checkbox" value="youtube"> YouTube Shorts</label>
-                  <label class="tag-toggle active"><input type="checkbox" checked value="blog"> SEO Blog Articles</label>
-                  <label class="tag-toggle"><input type="checkbox" value="medium"> Medium / Ghost</label>
-                  <label class="tag-toggle"><input type="checkbox" value="remotion"> Remotion Video</label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- --------------------------------------- -->
-          <!-- STEP 2: INSTANT BRAND IDENTITY (12 SECONDS) -->
-          <!-- --------------------------------------- -->
-          <div class="step-pane" id="paneStep2" data-step-id="2">
-            <div class="pane-intro">
-              <span class="eyebrow-tag">STEP 2 • BRAND DNA</span>
-              <h2>Instant Brand Extraction</h2>
-              <p class="pane-desc">No 3-minute blocking screens. Enter your URL and Zorvi will synthesize your palette, typography, and tone with real-time optimistic previews.</p>
-            </div>
-
-            <!-- URL Input Bar -->
-            <div class="brand-input-bar">
-              <div class="input-with-icon">
-                <span class="input-icon">🔗</span>
-                <input type="text" id="brandUrlInput" placeholder="Enter your website URL (e.g. zorvi.ai)" value="zorvi.ai" class="brand-url-field">
-              </div>
-              <button type="button" class="btn btn-secondary" id="btnExtractBrand">
-                <span class="btn-spinner" style="display:none;"></span>
-                <span>Extract Brand</span>
-              </button>
-            </div>
-
-            <!-- Quick Suggestion Presets -->
-            <div class="url-presets">
-              <span class="preset-label">Try popular brands:</span>
-              <button type="button" class="preset-chip active" data-url="zorvi.ai" data-brand="Zorvi AI" data-primary="#E1352A" data-secondary="#1E232E" data-font="Plus Jakarta Sans" data-voice="Professional, Innovative, Bold">Zorvi AI (Default)</button>
-              <button type="button" class="preset-chip" data-url="linear.app" data-brand="Linear" data-primary="#5E6AD2" data-secondary="#0E1015" data-font="Inter" data-voice="Precise, Focused, Minimal">Linear</button>
-              <button type="button" class="preset-chip" data-url="stripe.com" data-brand="Stripe" data-primary="#635BFF" data-secondary="#0A2540" data-font="Plus Jakarta Sans" data-voice="Authoritative, Developer-Centric">Stripe</button>
-              <button type="button" class="preset-chip" data-url="notion.so" data-brand="Notion" data-primary="#2E2E2E" data-secondary="#F7F6F3" data-font="Outfit" data-voice="Friendly, Thoughtful, Creative">Notion</button>
-            </div>
-
-            <!-- Live Brand Identity Preview Card -->
-            <div class="brand-preview-card" id="brandPreviewCard">
-              <div class="preview-header">
-                <div class="brand-avatar-box">
-                  <div class="brand-avatar-circle" id="brandAvatar">Z</div>
-                  <div class="brand-meta">
-                    <h3 id="brandNameDisplay">Zorvi AI</h3>
-                    <span class="brand-domain-chip" id="brandDomainDisplay">zorvi.ai</span>
-                  </div>
-                </div>
-                <div class="sync-status">
-                  <span class="status-dot pulsating"></span>
-                  <span class="status-text" id="syncStatusText">Brand Guidelines Active</span>
-                </div>
-              </div>
-
-              <div class="brand-spec-grid">
-                <!-- Color Palette Swatches -->
-                <div class="spec-block">
-                  <label class="spec-label">Extracted Palette</label>
-                  <div class="color-swatches-row" id="colorSwatchesRow">
-                    <div class="swatch-item" title="Primary Brand Accent">
-                      <span class="swatch-color" id="swatchPrimary" style="background-color: #E1352A;"></span>
-                      <span class="swatch-hex" id="hexPrimary">#E1352A</span>
+              <div class="archetype-cards-stack">
+                <div class="card-archetype-item active" data-archetype="creator">
+                  <div class="arch-select-dot"></div>
+                  <div class="arch-emoji-box">🚀</div>
+                  <div class="arch-meta">
+                    <div class="arch-title-wrap">
+                      <h3>Solo Creator & Influencer</h3>
+                      <span class="pill-velocity">High Velocity</span>
                     </div>
-                    <div class="swatch-item" title="Secondary Base">
-                      <span class="swatch-color" id="swatchSecondary" style="background-color: #1E232E;"></span>
-                      <span class="swatch-hex" id="hexSecondary">#1E232E</span>
-                    </div>
-                    <div class="swatch-item" title="Surface Warmth">
-                      <span class="swatch-color" id="swatchAccent" style="background-color: #FFF5F2;"></span>
-                      <span class="swatch-hex" id="hexAccent">#FFF5F2</span>
-                    </div>
-                    <div class="swatch-item" title="Highlight Glow">
-                      <span class="swatch-color" id="swatchGlow" style="background-color: #FF6B4A;"></span>
-                      <span class="swatch-hex" id="hexGlow">#FF6B4A</span>
+                    <p>Optimized for YouTube, Instagram Reels, and viral X threads with fast turnaround.</p>
+                    <div class="arch-tags-row">
+                      <span class="mini-tag">Reels / Shorts</span>
+                      <span class="mini-tag">Viral Hooks</span>
+                      <span class="mini-tag">X Threads</span>
                     </div>
                   </div>
                 </div>
 
-                <!-- Font Pairing -->
-                <div class="spec-block">
-                  <label class="spec-label">Typography Pairing</label>
-                  <div class="font-selection-pill">
-                    <span class="font-name" id="displayFont">Plus Jakarta Sans</span>
-                    <span class="font-badge">Heading & Body</span>
+                <div class="card-archetype-item" data-archetype="startup">
+                  <div class="arch-select-dot"></div>
+                  <div class="arch-emoji-box">⚡</div>
+                  <div class="arch-meta">
+                    <div class="arch-title-wrap">
+                      <h3>Startup & Growth Team</h3>
+                      <span class="pill-velocity">B2B Reach</span>
+                    </div>
+                    <p>Designed for founders scaling B2B LinkedIn authority, SEO blogs, and deck narration.</p>
+                    <div class="arch-tags-row">
+                      <span class="mini-tag">LinkedIn Thought Leadership</span>
+                      <span class="mini-tag">SEO Blogs</span>
+                      <span class="mini-tag">Pitch Decks</span>
+                    </div>
                   </div>
                 </div>
 
-                <!-- Voice Tone Selector -->
-                <div class="spec-block full-width">
-                  <label class="spec-label">Brand Voice Tone (Select primary & secondary)</label>
-                  <div class="voice-chips-group" id="voiceChipsGroup">
-                    <button type="button" class="voice-chip active" data-voice="Professional">Professional</button>
-                    <button type="button" class="voice-chip active" data-voice="Bold">Bold</button>
-                    <button type="button" class="voice-chip" data-voice="Visionary">Visionary</button>
-                    <button type="button" class="voice-chip" data-voice="Casual">Casual</button>
-                    <button type="button" class="voice-chip" data-voice="Friendly">Friendly</button>
-                    <button type="button" class="voice-chip" data-voice="Authoritative">Authoritative</button>
-                    <button type="button" class="voice-chip" data-voice="Playful">Playful</button>
+                <div class="card-archetype-item" data-archetype="agency">
+                  <div class="arch-select-dot"></div>
+                  <div class="arch-emoji-box">🏢</div>
+                  <div class="arch-meta">
+                    <div class="arch-title-wrap">
+                      <h3>Agency & Multi-Brand</h3>
+                      <span class="pill-velocity">Multi-Tenant</span>
+                    </div>
+                    <p>Manage separate client brand voices, approval pipelines, and bulk batch scheduling.</p>
+                    <div class="arch-tags-row">
+                      <span class="mini-tag">Client Workspaces</span>
+                      <span class="mini-tag">Approval Queues</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- --------------------------------------- -->
-          <!-- STEP 3: AUDIENCE & TONE MATRIX (15 SECONDS) -->
-          <!-- --------------------------------------- -->
-          <div class="step-pane" id="paneStep3" data-step-id="3">
-            <div class="pane-intro">
-              <span class="eyebrow-tag">STEP 3 • AUDIENCE INTELLIGENCE</span>
-              <h2>Interactive Audience & Tone Matrix</h2>
-              <p class="pane-desc">Replaces the original 10-question survey with one visual matrix. Select who you are speaking to and how your copy should resonate.</p>
-            </div>
-
-            <div class="audience-matrix-grid">
-              <!-- Left Column: Target Archetype Selection -->
-              <div class="matrix-card">
-                <label class="matrix-card-title">1. Target Audience Demographic</label>
-                <div class="persona-options-list" id="personaOptionsList">
-                  <div class="persona-option-item active" data-persona="b2b-founders">
-                    <div class="persona-radio"></div>
-                    <div class="persona-info">
-                      <h4>Founders & B2B Decision Makers</h4>
-                      <p>Ages 28–48 • Tech Executives, Startup Founders, VP Marketing seeking high ROI.</p>
+                <div class="card-archetype-item" data-archetype="enterprise">
+                  <div class="arch-select-dot"></div>
+                  <div class="arch-emoji-box">🌐</div>
+                  <div class="arch-meta">
+                    <div class="arch-title-wrap">
+                      <h3>Full Content Suite</h3>
+                      <span class="pill-velocity">Enterprise</span>
                     </div>
-                  </div>
-
-                  <div class="persona-option-item" data-persona="genz-creators">
-                    <div class="persona-radio"></div>
-                    <div class="persona-info">
-                      <h4>Gen-Z & Millennial Creators</h4>
-                      <p>Ages 18–32 • Digital creators, YouTubers, and TikTok influencers building audience.</p>
-                    </div>
-                  </div>
-
-                  <div class="persona-option-item" data-persona="growth-marketers">
-                    <div class="persona-radio"></div>
-                    <div class="persona-info">
-                      <h4>Marketing Agency Clients</h4>
-                      <p>Ages 25–45 • SMB owners, e-commerce brands needing multi-brand consistency.</p>
-                    </div>
-                  </div>
-
-                  <div class="persona-option-item" data-persona="tech-innovators">
-                    <div class="persona-radio"></div>
-                    <div class="persona-info">
-                      <h4>Engineers & Tech Innovators</h4>
-                      <p>Ages 22–40 • Developers, architects, and technical decision-makers craving depth.</p>
+                    <p>Full Remotion automated video renders, dual GPT & Gemini pipelines, and Ghost/WordPress.</p>
+                    <div class="arch-tags-row">
+                      <span class="mini-tag">Remotion Video</span>
+                      <span class="mini-tag">Omni-Channel</span>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <!-- Right Column: Tone & Style Sliders -->
-              <div class="matrix-card">
-                <label class="matrix-card-title">2. Tone Style & Writing Dimensions</label>
-                
-                <div class="slider-group">
-                  <div class="slider-labels">
+            <!-- Step 2 Pane -->
+            <div class="cockpit-step-panel" id="splitPane2" data-panel="2">
+              <div class="panel-header-sub">
+                <span class="section-tag">Step 2 • Brand DNA</span>
+                <h2>Instant Brand Extraction</h2>
+                <p>Zero 3-minute blocking screens. Enter your URL and Zorvi extracts palette and tone in 350ms.</p>
+              </div>
+
+              <!-- Brand URL Input -->
+              <div class="url-input-container">
+                <div class="url-input-field-wrap">
+                  <span class="url-icon">🌐</span>
+                  <input type="text" id="splitBrandUrlInput" class="url-input-control" value="zorvi.ai" placeholder="Enter website URL (e.g. zorvi.ai)">
+                </div>
+                <button type="button" class="btn-action-primary" id="btnSplitExtractBrand">Extract</button>
+              </div>
+
+              <!-- Brand Preset Chips -->
+              <div class="brand-presets-row">
+                <span class="presets-label">Quick Presets:</span>
+                <button type="button" class="preset-pill-chip active" data-brand="zorvi.ai">Zorvi AI (Default)</button>
+                <button type="button" class="preset-pill-chip" data-brand="linear.app">Linear</button>
+                <button type="button" class="preset-pill-chip" data-brand="stripe.com">Stripe</button>
+                <button type="button" class="preset-pill-chip" data-brand="notion.so">Notion</button>
+              </div>
+
+              <!-- Interactive Palette & Font Controls -->
+              <div class="brand-tuning-box">
+                <div class="tuning-block">
+                  <label class="tuning-label">Extracted Color Palette</label>
+                  <div class="tuning-swatches-row" id="splitSwatchesRow">
+                    <div class="tuning-swatch-item">
+                      <span class="swatch-bubble" id="splitSwatchPrimary" style="background:#E1352A;"></span>
+                      <span class="swatch-val" id="splitHexPrimary">#E1352A</span>
+                    </div>
+                    <div class="tuning-swatch-item">
+                      <span class="swatch-bubble" id="splitSwatchSecondary" style="background:#1E232E;"></span>
+                      <span class="swatch-val" id="splitHexSecondary">#1E232E</span>
+                    </div>
+                    <div class="tuning-swatch-item">
+                      <span class="swatch-bubble" id="splitSwatchAccent" style="background:#FFF6F4;"></span>
+                      <span class="swatch-val">#FFF6F4</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tuning-block">
+                  <label class="tuning-label">Brand Voice Tone (Select tags)</label>
+                  <div class="tuning-voice-chips" id="splitVoiceChips">
+                    <button type="button" class="v-chip active">Professional</button>
+                    <button type="button" class="v-chip active">Bold</button>
+                    <button type="button" class="v-chip">Visionary</button>
+                    <button type="button" class="v-chip">Authoritative</button>
+                    <button type="button" class="v-chip">Conversational</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3 Pane -->
+            <div class="cockpit-step-panel" id="splitPane3" data-panel="3">
+              <div class="panel-header-sub">
+                <span class="section-tag">Step 3 • Audience Matrix</span>
+                <h2>Audience & Tone Intelligence</h2>
+                <p>Replaces the 10-question survey with one visual matrix. Target who you speak to.</p>
+              </div>
+
+              <!-- Persona Target List -->
+              <div class="persona-target-stack" id="splitPersonaStack">
+                <div class="persona-card-item active" data-persona="b2b-founders">
+                  <div class="p-radio"></div>
+                  <div class="p-details">
+                    <h4>Founders & B2B Decision Makers</h4>
+                    <p>Ages 28–48 • Tech Executives, Startup Founders, VP Marketing.</p>
+                  </div>
+                </div>
+
+                <div class="persona-card-item" data-persona="genz-creators">
+                  <div class="p-radio"></div>
+                  <div class="p-details">
+                    <h4>Gen-Z & Millennial Creators</h4>
+                    <p>Ages 18–32 • Digital creators, YouTubers, and TikTok influencers.</p>
+                  </div>
+                </div>
+
+                <div class="persona-card-item" data-persona="growth-marketers">
+                  <div class="p-radio"></div>
+                  <div class="p-details">
+                    <h4>Agency Clients & SMB Owners</h4>
+                    <p>Ages 25–45 • Brands needing multi-channel consistency.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tone Sliders -->
+              <div class="tone-sliders-container">
+                <div class="slider-item">
+                  <div class="slider-header-flex">
                     <span>Direct & Concise</span>
-                    <strong id="sliderToneValue">Analytical & Action-Oriented</strong>
-                    <span>Storytelling & Warm</span>
+                    <strong id="splitToneLabel">Analytical & Action-Oriented</strong>
+                    <span>Storytelling</span>
                   </div>
-                  <input type="range" min="1" max="5" value="2" class="matrix-slider" id="toneSlider">
+                  <input type="range" min="1" max="5" value="2" class="range-slider-control" id="splitToneSlider">
                 </div>
 
-                <div class="slider-group">
-                  <div class="slider-labels">
-                    <span>Casual & Relatable</span>
-                    <strong id="sliderDepthValue">High-Authority & Polished</strong>
-                    <span>Formal & Academic</span>
+                <div class="slider-item">
+                  <div class="slider-header-flex">
+                    <span>Casual Social</span>
+                    <strong id="splitDepthLabel">High-Authority & Polished</strong>
+                    <span>Academic</span>
                   </div>
-                  <input type="range" min="1" max="5" value="3" class="matrix-slider" id="depthSlider">
+                  <input type="range" min="1" max="5" value="3" class="range-slider-control" id="splitDepthSlider">
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4 Pane -->
+            <div class="cockpit-step-panel" id="splitPane4" data-panel="4">
+              <div class="panel-header-sub">
+                <span class="section-tag">Step 4 • Creative Engine</span>
+                <h2>Select Your AI Copilot</h2>
+                <p>Dual LLMs (GPT-4o + Gemini 1.5) with Remotion video rendering. Choose your primary driver.</p>
+              </div>
+
+              <div class="copilots-stack-row" id="splitCopilotStack">
+                <div class="copilot-card-box active" data-agent="growth">
+                  <div class="c-avatar-box">⚡</div>
+                  <div class="c-meta">
+                    <div class="c-title-row">
+                      <h4>The Growth Strategist</h4>
+                      <span class="c-engine-badge">GPT-4o Engine</span>
+                    </div>
+                    <p>Master of algorithmic reach, LinkedIn carousels, and viral X threads.</p>
+                  </div>
                 </div>
 
-                <div class="format-preference-box">
-                  <label class="spec-label">Primary Engagement Hook Style</label>
-                  <div class="hook-chips">
-                    <button type="button" class="hook-chip active" data-hook="contrarian">Contrarian Insights</button>
-                    <button type="button" class="hook-chip active" data-hook="framework">Step-by-Step Frameworks</button>
-                    <button type="button" class="hook-chip" data-hook="story">Founder Journey Stories</button>
-                    <button type="button" class="hook-chip" data-hook="case-study">Data Case Studies</button>
+                <div class="copilot-card-box" data-agent="storyteller">
+                  <div class="c-avatar-box">🎬</div>
+                  <div class="c-meta">
+                    <div class="c-title-row">
+                      <h4>The Visual Storyteller</h4>
+                      <span class="c-engine-badge">Gemini + Remotion</span>
+                    </div>
+                    <p>Automated vertical 9:16 reels, video storyboards, and motion graphics.</p>
                   </div>
                 </div>
 
-                <!-- Live Generated Persona Badge -->
-                <div class="live-persona-preview" id="livePersonaPreview">
-                  <div class="preview-badge">✨ Live AI Persona Synthesized</div>
-                  <p id="synthesizedPersonaText"><strong>Target:</strong> B2B Tech Founders & Marketers • <strong>Tone:</strong> Analytical & Action-Oriented with Contrarian Insights.</p>
+                <div class="copilot-card-box" data-agent="authority">
+                  <div class="c-avatar-box">📚</div>
+                  <div class="c-meta">
+                    <div class="c-title-row">
+                      <h4>The Industry Authority</h4>
+                      <span class="c-engine-badge">Dual LLM Hybrid</span>
+                    </div>
+                    <p>SEO long-form publications, investor decks, and industry whitepapers.</p>
+                  </div>
                 </div>
+              </div>
+            </div>
+
+            <!-- Step 5 Pane -->
+            <div class="cockpit-step-panel" id="splitPane5" data-panel="5">
+              <div class="panel-header-sub">
+                <span class="section-tag">Step 5 • The Magic Moment</span>
+                <h2>Campaign Generated & Staged</h2>
+                <p>Your custom assets are synthesized and staged directly into the Content Pipeline!</p>
+              </div>
+
+              <div class="campaign-success-banner">
+                <div class="success-icon">✨</div>
+                <div class="success-text">
+                  <h3>3 publish-ready assets staged in pipeline</h3>
+                  <p>Synthesized for <strong id="splitBrandDisplay">Zorvi AI</strong> with <strong id="splitCopilotDisplay">The Growth Strategist</strong>.</p>
+                </div>
+              </div>
+
+              <div class="cta-workspace-wrap">
+                <button type="button" class="btn-primary-glow btn-block" id="btnSplitEnterWorkspace">
+                  <span>Enter Zorvi Workspace (3 Drafts Ready)</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
               </div>
             </div>
           </div>
 
-          <!-- --------------------------------------- -->
-          <!-- STEP 4: AI COPILOT & CHANNELS (10 SECONDS) -->
-          <!-- --------------------------------------- -->
-          <div class="step-pane" id="paneStep4" data-step-id="4">
-            <div class="pane-intro">
-              <span class="eyebrow-tag">STEP 4 • CREATIVE ENGINE</span>
-              <h2>Select Your AI Copilot & Channels</h2>
-              <p class="pane-desc">Zorvi uses dual LLMs (GPT + Gemini) and Remotion video rendering. Pick your primary creative agent copilot.</p>
-            </div>
+          <!-- Wizard Footer Navigation Bar -->
+          <div class="cockpit-footer-bar">
+            <button type="button" class="btn-cockpit-back" id="btnSplitBack" disabled>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+              <span>Back</span>
+            </button>
 
-            <!-- 3 AI Copilot Agent Cards -->
-            <div class="copilot-grid">
-              <div class="copilot-card active" data-agent="growth" id="agentGrowth">
-                <div class="agent-avatar">
-                  <span class="agent-emoji">⚡</span>
-                </div>
-                <div class="agent-details">
-                  <div class="agent-title-row">
-                    <h3>The Growth Strategist</h3>
-                    <span class="model-badge">GPT-4o Engine</span>
-                  </div>
-                  <p>Specialized in viral distribution, algorithmic hooks, LinkedIn carousels, and high-conversion X threads.</p>
-                  <div class="agent-stats">
-                    <span>Avg Viral Score: <strong>94/100</strong></span>
-                    <span>Format: <strong>Multi-Platform</strong></span>
-                  </div>
-                </div>
-              </div>
+            <span class="cockpit-step-indicator" id="splitStepIndicator">Step 1 of 5</span>
 
-              <div class="copilot-card" data-agent="storyteller" id="agentStoryteller">
-                <div class="agent-avatar">
-                  <span class="agent-emoji">🎬</span>
-                </div>
-                <div class="agent-details">
-                  <div class="agent-title-row">
-                    <h3>The Visual Storyteller</h3>
-                    <span class="model-badge">Gemini + Remotion</span>
-                  </div>
-                  <p>Specialized in Instagram Reels, TikTok scripts, and automated video timeline rendering with Remotion.</p>
-                  <div class="agent-stats">
-                    <span>Video Render: <strong>Sub-10s</strong></span>
-                    <span>Format: <strong>9:16 Video</strong></span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="copilot-card" data-agent="authority" id="agentAuthority">
-                <div class="agent-avatar">
-                  <span class="agent-emoji">📚</span>
-                </div>
-                <div class="agent-details">
-                  <div class="agent-title-row">
-                    <h3>The Industry Authority</h3>
-                    <span class="model-badge">Dual GPT & Gemini</span>
-                  </div>
-                  <p>Synthesizes deep-dive SEO articles, newsletters, and pitch decks with built-in avatar narration.</p>
-                  <div class="agent-stats">
-                    <span>SEO Depth: <strong>Comprehensive</strong></span>
-                    <span>Format: <strong>Long-Form</strong></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Publishing Destinations Bar -->
-            <div class="destinations-card">
-              <label class="matrix-card-title">Connected Publishing Channels</label>
-              <div class="channels-connect-row">
-                <div class="channel-pill connected">
-                  <span class="ch-icon">💼</span>
-                  <span class="ch-name">LinkedIn</span>
-                  <span class="ch-badge">Ready</span>
-                </div>
-                <div class="channel-pill connected">
-                  <span class="ch-icon">𝕏</span>
-                  <span class="ch-name">X (Twitter)</span>
-                  <span class="ch-badge">Ready</span>
-                </div>
-                <div class="channel-pill connected">
-                  <span class="ch-icon">📸</span>
-                  <span class="ch-name">Instagram</span>
-                  <span class="ch-badge">Ready</span>
-                </div>
-                <div class="channel-pill">
-                  <span class="ch-icon">▶️</span>
-                  <span class="ch-name">YouTube</span>
-                  <span class="ch-badge opt">1-Click Connect</span>
-                </div>
-                <div class="channel-pill">
-                  <span class="ch-icon">📝</span>
-                  <span class="ch-name">Ghost / Medium</span>
-                  <span class="ch-badge opt">1-Click Connect</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- --------------------------------------- -->
-          <!-- STEP 5: MAGIC MOMENT GENERATION (8 SECONDS) -->
-          <!-- --------------------------------------- -->
-          <div class="step-pane" id="paneStep5" data-step-id="5">
-            <div class="pane-intro">
-              <span class="eyebrow-tag">STEP 5 • THE MAGIC MOMENT</span>
-              <h2>Your Custom Campaign is Ready to Ship</h2>
-              <p class="pane-desc">Instead of dropping you onto an empty dashboard with zeros, Zorvi has generated 3 publish-ready assets customized to your brand!</p>
-            </div>
-
-            <!-- AI Live Generation Stream Status -->
-            <div class="generation-status-card" id="generationStatusCard">
-              <div class="status-icon-glow">✨</div>
-              <div class="status-texts">
-                <h3 id="generationStatusTitle">Synthesized 3 assets with Zorvi AI Engine</h3>
-                <p id="generationStatusDesc">Personalized for <strong id="genBrandTarget">Zorvi AI</strong> using <strong id="genAgentTarget">The Growth Strategist</strong>.</p>
-              </div>
-              <button type="button" class="btn btn-secondary btn-sm" id="btnRegenerateSample">
-                <span>⚡ Re-Synthesize</span>
-              </button>
-            </div>
-
-            <!-- 3 Generated Assets Showcase -->
-            <div class="generated-assets-deck">
-              <!-- Asset 1: LinkedIn Post -->
-              <div class="asset-card" id="assetCardLinkedIn">
-                <div class="asset-header">
-                  <div class="asset-type">
-                    <span class="type-icon">💼</span>
-                    <span class="type-title">LinkedIn Thought Leadership Post</span>
-                  </div>
-                  <div class="asset-actions">
-                    <button type="button" class="copy-btn" data-target="contentLinkedIn" title="Copy text">Copy</button>
-                    <span class="ready-badge">Publish Ready</span>
-                  </div>
-                </div>
-                <div class="asset-body" id="contentLinkedIn">
-<p>Most content creators spend 10+ hours a week juggling 6 disjointed tools just to ship 3 posts.</p>
-<br>
-<p>Here's what happens when you centralize your AI workspace:</p>
-<p>1. <strong>Dual LLM Drafting:</strong> GPT-4o for sharp hooks + Gemini 1.5 for comprehensive research.</p>
-<p>2. <strong>Instant Video Storytelling:</strong> One-click Remotion rendering for high-retention Reels.</p>
-<p>3. <strong>Zero Multi-Brand Friction:</strong> Tone of voice locked across every channel automatically.</p>
-<br>
-<p>Stop managing tools. Start scaling distribution.</p>
-<br>
-<p>#AIContent #CreatorEconomy #GrowthMarketing #SaaS</p>
-                </div>
-                <div class="asset-footer">
-                  <span class="metric-estimate">📈 Estimated Reach: <strong>14.2k impressions</strong></span>
-                  <button type="button" class="btn-schedule-chip">Schedule for Tomorrow, 9:00 AM</button>
-                </div>
-              </div>
-
-              <!-- Asset 2: X / Twitter Thread -->
-              <div class="asset-card" id="assetCardTwitter">
-                <div class="asset-header">
-                  <div class="asset-type">
-                    <span class="type-icon">𝕏</span>
-                    <span class="type-title">X (Twitter) Viral Thread</span>
-                  </div>
-                  <div class="asset-actions">
-                    <button type="button" class="copy-btn" data-target="contentTwitter" title="Copy text">Copy</button>
-                    <span class="ready-badge">Publish Ready</span>
-                  </div>
-                </div>
-                <div class="asset-body" id="contentTwitter">
-<p><strong>1/4</strong> The biggest bottleneck in modern marketing isn't having ideas — it's the 9-minute friction between an insight and a published asset. 🧵</p>
-<br>
-<p><strong>2/4</strong> Traditional SaaS onboarding treats you like a market research survey. 14 screens, 20 checkboxes, and 3 minutes staring at a progress bar.</p>
-<br>
-<p><strong>3/4</strong> Modern tools optimize for "Time to First Magic Moment." Enter URL → Extract brand in 500ms → Generate 3 publish-ready campaigns instantly.</p>
-<br>
-<p><strong>4/4</strong> Your workspace is alive before you even enter it. That's the power of Zorvi.</p>
-                </div>
-                <div class="asset-footer">
-                  <span class="metric-estimate">💬 Estimated Reposts: <strong>85+</strong></span>
-                  <button type="button" class="btn-schedule-chip">Schedule Thread</button>
-                </div>
-              </div>
-
-              <!-- Asset 3: Instagram / Remotion Video Script -->
-              <div class="asset-card" id="assetCardVideo">
-                <div class="asset-header">
-                  <div class="asset-type">
-                    <span class="type-icon">🎬</span>
-                    <span class="type-title">Instagram Reel / Remotion Video Script</span>
-                  </div>
-                  <div class="asset-actions">
-                    <button type="button" class="copy-btn" data-target="contentVideo" title="Copy text">Copy</button>
-                    <span class="ready-badge">Remotion Ready</span>
-                  </div>
-                </div>
-                <div class="asset-body" id="contentVideo">
-<p><strong>[Scene 1 • 0-2s] Fast Hook:</strong> Close-up face or bold typography kinetic title: <em>"Why are you still using 5 different tools for your brand?"</em></p>
-<br>
-<p><strong>[Scene 2 • 3-7s] Contrast:</strong> Screen split showing 10 open browser tabs vs. 1 streamlined Zorvi dashboard.</p>
-<br>
-<p><strong>[Scene 3 • 8-15s] Payoff:</strong> Voiceover: <em>"With Zorvi, our AI generates captions, carousels, and studio videos in under 60 seconds."</em></p>
-<br>
-<p><strong>[CTA • 16-20s]:</strong> <em>"Drop your brand URL in the comments to see your free 30-day content calendar."</em></p>
-                </div>
-                <div class="asset-footer">
-                  <span class="metric-estimate">🎥 Video Duration: <strong>20s (9:16 vertical)</strong></span>
-                  <button type="button" class="btn-schedule-chip">Render with Remotion</button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Finish CTA Box -->
-            <div class="launch-workspace-cta-card">
-              <div class="cta-info">
-                <h3>Your Workspace is Pre-Populated and Ready!</h3>
-                <p>These 3 campaigns have been automatically staged into your <strong>Content Pipeline</strong> as active drafts. No empty screens!</p>
-              </div>
-              <button type="button" class="btn btn-primary btn-large glow-effect" id="btnLaunchWorkspace">
-                <span>Enter Zorvi Workspace</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </button>
-            </div>
+            <button type="button" class="btn-cockpit-continue" id="btnSplitContinue">
+              <span id="btnSplitContinueText">Continue</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
           </div>
         </div>
 
-        <!-- Wizard Navigation Footer -->
-        <div class="wizard-footer-bar">
-          <button type="button" class="btn btn-outline" id="btnPrevStep" disabled>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-            <span>Back</span>
-          </button>
+        <!-- Right Pane: Real-Time Live Studio Canvas (55%) -->
+        <div class="studio-live-canvas-pane">
+          <!-- Canvas Top Bar with Device Viewport Switcher -->
+          <div class="canvas-viewport-bar">
+            <div class="viewport-title-flex">
+              <span class="canvas-live-badge"><span class="pulsing-live-dot"></span> LIVE PREVIEW</span>
+              <span class="canvas-sub">Synchronized Real-Time Studio</span>
+            </div>
 
-          <div class="footer-center-hint">
-            <span class="hint-bullet">•</span>
-            <span id="stepHelpHint">Step 1 of 5: Intent Selection</span>
+            <div class="device-viewport-toggle">
+              <button type="button" class="dev-toggle-btn active" data-device="mac" id="btnToggleMac" title="Desktop Mac View">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span>Desktop</span>
+              </button>
+              <button type="button" class="dev-toggle-btn" data-device="phone" id="btnTogglePhone" title="iPhone Mobile View">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                <span>Mobile</span>
+              </button>
+            </div>
           </div>
 
-          <button type="button" class="btn btn-primary" id="btnNextStep">
-            <span id="btnNextStepText">Continue</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-          </button>
+          <!-- The Realistic Device Mockup Frame Container -->
+          <div class="device-frame-shell device-mac" id="deviceFrameShell">
+            <!-- Mac Browser Chrome Header -->
+            <div class="mac-chrome-bar">
+              <div class="mac-traffic-lights">
+                <span class="tl-dot tl-red"></span>
+                <span class="tl-dot tl-yellow"></span>
+                <span class="tl-dot tl-green"></span>
+              </div>
+              <div class="mac-address-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span id="canvasUrlBar">app.zorvi.ai/workspace/new</span>
+              </div>
+              <div class="mac-window-tools">
+                <span class="active-brand-badge" id="canvasBrandBadge">Zorvi AI</span>
+              </div>
+            </div>
+
+            <!-- Dynamic Live Workspace Interior (Reacts to every step!) -->
+            <div class="device-screen-viewport" id="deviceScreenViewport">
+              
+              <!-- Screen State 1: Live Brand Workspace Staging -->
+              <div class="live-canvas-content" id="liveCanvasContent">
+                
+                <!-- Live Brand Banner -->
+                <div class="canvas-brand-hero">
+                  <div class="canvas-brand-avatar" id="canvasAvatar">Z</div>
+                  <div class="canvas-brand-info">
+                    <h3 id="canvasBrandName">Zorvi AI</h3>
+                    <div class="canvas-meta-chips">
+                      <span class="c-chip" id="canvasArchetypeBadge">Solo Creator Mode</span>
+                      <span class="c-chip" id="canvasCopilotBadge">⚡ The Growth Strategist</span>
+                    </div>
+                  </div>
+                  <div class="canvas-status-pill">
+                    <span class="c-dot"></span> Live Generating
+                  </div>
+                </div>
+
+                <!-- Live Generated Assets Grid Inside Device -->
+                <div class="canvas-assets-grid">
+                  <!-- Asset 1: LinkedIn -->
+                  <div class="canvas-asset-card">
+                    <div class="c-asset-top">
+                      <span class="c-platform linkedin">💼 LinkedIn Thought Leadership</span>
+                      <span class="c-status">Publish Ready</span>
+                    </div>
+                    <div class="c-asset-content" id="canvasLinkedInBody">
+                      <p>Most content creators spend 10+ hours a week juggling 6 disjointed tools just to ship 3 posts.</p>
+                      <br>
+                      <p>Here is what happens when you centralize your AI workspace at <strong>Zorvi AI</strong>:</p>
+                      <p>• <strong>Dual LLM Drafting:</strong> GPT-4o for hooks + Gemini 1.5 for deep research.</p>
+                      <p>• <strong>Instant Video Storytelling:</strong> One-click Remotion rendering for high-retention Reels.</p>
+                      <br>
+                      <p>Stop managing tools. Start scaling distribution.</p>
+                    </div>
+                    <div class="c-asset-footer">
+                      <button type="button" class="c-btn-action">Copy Asset</button>
+                      <span class="c-metric">Est. Reach: 14.2k</span>
+                    </div>
+                  </div>
+
+                  <!-- Asset 2: X Thread -->
+                  <div class="canvas-asset-card">
+                    <div class="c-asset-top">
+                      <span class="c-platform twitter">𝕏 X Viral Thread</span>
+                      <span class="c-status">Publish Ready</span>
+                    </div>
+                    <div class="c-asset-content" id="canvasTwitterBody">
+                      <p><strong>1/4</strong> The biggest bottleneck in modern marketing is the 9-minute friction between an insight and a published asset. 🧵</p>
+                      <br>
+                      <p><strong>2/4</strong> Traditional onboarding traps you in 14 screens and 3-minute waiting bars.</p>
+                      <br>
+                      <p><strong>3/4</strong> Modern tools optimize for "Time to First Magic Moment." Enter URL → Extract brand → 3 assets ready.</p>
+                    </div>
+                    <div class="c-asset-footer">
+                      <button type="button" class="c-btn-action">Copy Asset</button>
+                      <span class="c-metric">Est. Reposts: 85+</span>
+                    </div>
+                  </div>
+
+                  <!-- Asset 3: Video Reel Script -->
+                  <div class="canvas-asset-card">
+                    <div class="c-asset-top">
+                      <span class="c-platform instagram">🎬 Instagram Reel / Remotion Script</span>
+                      <span class="c-status">Remotion Ready</span>
+                    </div>
+                    <div class="c-asset-content" id="canvasVideoBody">
+                      <p><strong>[Scene 1 • 0-2s]:</strong> Fast Hook: <em>"Why are you still using 5 different tools for your brand?"</em></p>
+                      <br>
+                      <p><strong>[Scene 2 • 3-7s]:</strong> Screen split: 10 browser tabs vs. 1 Zorvi AI workspace.</p>
+                      <br>
+                      <p><strong>[Scene 3 • 8-15s]:</strong> Automated Remotion render generating studio captions.</p>
+                    </div>
+                    <div class="c-asset-footer">
+                      <button type="button" class="c-btn-action">Render with Remotion</button>
+                      <span class="c-metric">Duration: 20s (9:16)</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
         </div>
 
       </div>
     </section>
 
-    <!-- ========================================== -->
-    <!-- VIEW 2: POST-ONBOARDING ZORVI DASHBOARD -->
-    <!-- ========================================== -->
-    <section class="view-panel" id="viewDashboard" style="display: none;">
-      <div class="dashboard-layout">
+    <!-- ==================================================================== -->
+    <!-- MOCKUP VARIANT 2: CONVERSATIONAL ZEN FLOW (KEYBOARD-FIRST)          -->
+    <!-- ==================================================================== -->
+    <section class="mockup-variant-stage" id="stageVariantZen" style="display: none;">
+      <div class="zen-flow-container container">
+        <div class="zen-canvas-wrapper">
+          
+          <!-- Zen Ambient Halo -->
+          <div class="zen-ambient-aura"></div>
+
+          <!-- Zen Progress Indicator -->
+          <div class="zen-progress-header">
+            <span class="zen-step-badge" id="zenStepBadge">STEP 1 OF 5</span>
+            <div class="zen-progress-pills">
+              <span class="z-pill active"></span>
+              <span class="z-pill"></span>
+              <span class="z-pill"></span>
+              <span class="z-pill"></span>
+              <span class="z-pill"></span>
+            </div>
+            <span class="zen-timer-badge">⚡ 30s Zen Flow</span>
+          </div>
+
+          <!-- Zen Stage Card -->
+          <div class="zen-stage-card" id="zenStageCard">
+            <!-- Stage 1 -->
+            <div class="zen-stage-step active" id="zenStep1">
+              <span class="zen-eyebrow">WORKSPACE FOCUS</span>
+              <h1 class="zen-huge-title">What are you building with Zorvi?</h1>
+              <p class="zen-subtitle">Select an archetype. Press numbers <kbd>1</kbd> to <kbd>4</kbd> or click to choose.</p>
+
+              <div class="zen-options-list">
+                <button type="button" class="zen-option-row active" data-zen-arch="creator">
+                  <span class="zen-key-kbd">1</span>
+                  <div class="zen-opt-info">
+                    <h3>Solo Creator & Influencer</h3>
+                    <p>Rapid social hooks, Instagram Reels, and viral X threads.</p>
+                  </div>
+                  <span class="zen-arrow">→</span>
+                </button>
+
+                <button type="button" class="zen-option-row" data-zen-arch="startup">
+                  <span class="zen-key-kbd">2</span>
+                  <div class="zen-opt-info">
+                    <h3>Startup & Growth Marketing</h3>
+                    <p>B2B thought leadership, SEO articles, and product launches.</p>
+                  </div>
+                  <span class="zen-arrow">→</span>
+                </button>
+
+                <button type="button" class="zen-option-row" data-zen-arch="agency">
+                  <span class="zen-key-kbd">3</span>
+                  <div class="zen-opt-info">
+                    <h3>Agency & Multi-Brand Studio</h3>
+                    <p>Separate client workspaces, brand governance, and approval queues.</p>
+                  </div>
+                  <span class="zen-arrow">→</span>
+                </button>
+
+                <button type="button" class="zen-option-row" data-zen-arch="enterprise">
+                  <span class="zen-key-kbd">4</span>
+                  <div class="zen-opt-info">
+                    <h3>Full Content Suite</h3>
+                    <p>Automated Remotion video engine, pitch decks, and omni-channel.</p>
+                  </div>
+                  <span class="zen-arrow">→</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="zen-stage-step" id="zenStep2">
+              <span class="zen-eyebrow">BRAND DNA</span>
+              <h1 class="zen-huge-title">What is your brand website?</h1>
+              <p class="zen-subtitle">Zorvi extracts palette, typography, and tone in 350ms flat.</p>
+
+              <div class="zen-input-giant-wrap">
+                <input type="text" id="zenUrlInput" class="zen-giant-input" value="zorvi.ai" placeholder="type your website URL...">
+                <button type="button" class="btn-action-primary" id="btnZenExtract">Extract</button>
+              </div>
+
+              <div class="zen-chips-row">
+                <span class="z-label">Presets:</span>
+                <button type="button" class="z-chip active" data-zen-brand="zorvi.ai">Zorvi AI</button>
+                <button type="button" class="z-chip" data-zen-brand="linear.app">Linear</button>
+                <button type="button" class="z-chip" data-zen-brand="stripe.com">Stripe</button>
+              </div>
+            </div>
+
+            <!-- Stage 3 -->
+            <div class="zen-stage-step" id="zenStep3">
+              <span class="zen-eyebrow">AUDIENCE INTELLIGENCE</span>
+              <h1 class="zen-huge-title">Who are you writing for?</h1>
+              <p class="zen-subtitle">One intuitive slider replaces a 10-question survey.</p>
+
+              <div class="zen-matrix-options">
+                <button type="button" class="zen-persona-chip active" data-zen-persona="b2b">B2B Founders & Tech Execs</button>
+                <button type="button" class="zen-persona-chip" data-zen-persona="genz">Gen-Z Creators & Influencers</button>
+                <button type="button" class="zen-persona-chip" data-zen-persona="agency">Agency SMB Clients</button>
+              </div>
+
+              <div class="zen-slider-wrap">
+                <label>Tone Dimension: <strong id="zenToneLabel">Analytical & Action-Oriented</strong></label>
+                <input type="range" min="1" max="5" value="2" class="range-slider-control" id="zenToneSlider">
+              </div>
+            </div>
+
+            <!-- Stage 4 -->
+            <div class="zen-stage-step" id="zenStep4">
+              <span class="zen-eyebrow">CREATIVE ENGINE</span>
+              <h1 class="zen-huge-title">Pick your AI Creative Copilot</h1>
+              <p class="zen-subtitle">Your dedicated creative pair-programmer.</p>
+
+              <div class="zen-copilot-toggles">
+                <button type="button" class="zen-cop-card active" data-zen-cop="growth">
+                  <span class="zen-cop-icon">⚡</span>
+                  <h3>The Growth Strategist</h3>
+                  <span class="zen-cop-sub">GPT-4o Viral Engine</span>
+                </button>
+                <button type="button" class="zen-cop-card" data-zen-cop="storyteller">
+                  <span class="zen-cop-icon">🎬</span>
+                  <h3>The Visual Storyteller</h3>
+                  <span class="zen-cop-sub">Gemini + Remotion Video</span>
+                </button>
+                <button type="button" class="zen-cop-card" data-zen-cop="authority">
+                  <span class="zen-cop-icon">📚</span>
+                  <h3>The Industry Authority</h3>
+                  <span class="zen-cop-sub">Dual LLM Research</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Stage 5 -->
+            <div class="zen-stage-step" id="zenStep5">
+              <span class="zen-eyebrow">READY TO SHIP</span>
+              <h1 class="zen-huge-title">3 Campaigns Staged in Queue</h1>
+              <p class="zen-subtitle">Your workspace is pre-populated and ready to publish.</p>
+
+              <div class="zen-assets-preview-box">
+                <div class="zen-asset-snippet">
+                  <span class="z-badge">LinkedIn</span>
+                  <p>Most creators juggle 6 tools. With Zorvi AI, draft, render, and publish in 60s.</p>
+                </div>
+                <div class="zen-asset-snippet">
+                  <span class="z-badge">X Thread</span>
+                  <p>1/4 The biggest bottleneck in marketing is the 9-minute setup friction...</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn-primary-glow btn-block btn-lg" id="btnZenEnterWorkspace">
+                <span>Enter Zorvi Workspace</span>
+                <kbd>↵ Enter</kbd>
+              </button>
+            </div>
+          </div>
+
+          <!-- Zen Keyboard Controls Footer -->
+          <div class="zen-footer-hints">
+            <span>Press <kbd>Enter ↵</kbd> to Continue</span>
+            <span>Press <kbd>Esc</kbd> to go Back</span>
+            <div class="zen-nav-btn-group">
+              <button type="button" class="btn-zen-arrow" id="btnZenPrev">← Prev</button>
+              <button type="button" class="btn-zen-arrow primary" id="btnZenNext">Next →</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- MOCKUP VARIANT 3: MODULAR BENTO GRID (RAYCAST / VERCEL STYLE)       -->
+    <!-- ==================================================================== -->
+    <section class="mockup-variant-stage" id="stageVariantBento" style="display: none;">
+      <div class="bento-cockpit-container container">
+        
+        <div class="bento-intro-bar">
+          <div class="bento-titles">
+            <span class="section-tag">VARIANT 3 • MODULAR BENTO GRID</span>
+            <h2>All-in-One High-Density Onboarding Cockpit</h2>
+            <p>Interactive bento widgets let you configure archetype, brand palette, audience, and copilots simultaneously in under 60 seconds.</p>
+          </div>
+          <div class="bento-actions-row">
+            <button type="button" class="btn-primary-glow" id="btnBentoDeployWorkspace">
+              <span>Deploy Workspace (3 Staged Drafts)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- The Bento Grid Layout -->
+        <div class="bento-grid-dashboard">
+          
+          <!-- Widget 1: Creator Archetype (Span 2x2) -->
+          <div class="bento-card bento-span-2">
+            <div class="bento-card-header">
+              <span class="b-icon">🚀</span>
+              <h3>1. Creator Archetype & Scope</h3>
+              <span class="b-badge">Smart Defaults</span>
+            </div>
+            <div class="bento-archetype-grid">
+              <div class="bento-arch-item active" data-bento-arch="creator">
+                <span class="b-emoji">⚡</span>
+                <h4>Solo Creator</h4>
+                <p>Reels, Viral Hooks, X</p>
+              </div>
+              <div class="bento-arch-item" data-bento-arch="startup">
+                <span class="b-emoji">🏢</span>
+                <h4>Startup Growth</h4>
+                <p>B2B LinkedIn, SEO Blogs</p>
+              </div>
+              <div class="bento-arch-item" data-bento-arch="agency">
+                <span class="b-emoji">🌐</span>
+                <h4>Agency Studio</h4>
+                <p>Client Brands, Approvals</p>
+              </div>
+              <div class="bento-arch-item" data-bento-arch="enterprise">
+                <span class="b-emoji">🎬</span>
+                <h4>Omni Suite</h4>
+                <p>Remotion Video, Decks</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Widget 2: Live Brand DNA Palette (Span 1x1) -->
+          <div class="bento-card">
+            <div class="bento-card-header">
+              <span class="b-icon">🎨</span>
+              <h3>2. Brand DNA & Palette</h3>
+            </div>
+            <div class="bento-palette-display">
+              <div class="b-swatch-box" style="background: #E1352A;" title="Primary Brand">
+                <span>#E1352A</span>
+              </div>
+              <div class="b-swatch-box" style="background: #1E232E;" title="Secondary Dark">
+                <span>#1E232E</span>
+              </div>
+              <div class="b-swatch-box" style="background: #FFF6F4;" title="Warm Accent">
+                <span>#FFF6F4</span>
+              </div>
+            </div>
+            <div class="bento-brand-preset-toggles">
+              <button type="button" class="b-btn-preset active">zorvi.ai</button>
+              <button type="button" class="b-btn-preset">linear.app</button>
+              <button type="button" class="b-btn-preset">stripe.com</button>
+            </div>
+          </div>
+
+          <!-- Widget 3: Audience Matrix (Span 1x1) -->
+          <div class="bento-card">
+            <div class="bento-card-header">
+              <span class="b-icon">👥</span>
+              <h3>3. Target Demographics</h3>
+            </div>
+            <div class="bento-demographics-pills">
+              <button type="button" class="b-demo-pill active">B2B Founders & Tech</button>
+              <button type="button" class="b-demo-pill">Gen-Z Digital Creators</button>
+              <button type="button" class="b-demo-pill">Agency Marketing Clients</button>
+            </div>
+            <div class="bento-tone-dial">
+              <label>Tone: <strong>Analytical & Direct</strong></label>
+              <input type="range" min="1" max="5" value="2" class="range-slider-control">
+            </div>
+          </div>
+
+          <!-- Widget 4: AI Copilot Performance (Span 1x1) -->
+          <div class="bento-card">
+            <div class="bento-card-header">
+              <span class="b-icon">🤖</span>
+              <h3>4. Creative Copilot Engine</h3>
+            </div>
+            <div class="bento-copilot-selector">
+              <div class="b-cop-item active">
+                <strong>⚡ The Growth Strategist</strong>
+                <span>GPT-4o • 94/100 Viral Index</span>
+              </div>
+              <div class="b-cop-item">
+                <strong>🎬 The Visual Storyteller</strong>
+                <span>Gemini 1.5 + Remotion Video</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Widget 5: Live Pipeline Stage (Span 2x1) -->
+          <div class="bento-card bento-span-2">
+            <div class="bento-card-header">
+              <span class="b-icon">✨</span>
+              <h3>5. Instant Generated Campaigns (Staged in Pipeline)</h3>
+              <span class="b-badge ready">3 Drafts Ready</span>
+            </div>
+            <div class="bento-drafts-row">
+              <div class="b-draft-pill">
+                <span class="b-platform">💼 LinkedIn</span>
+                <p>Centralize your AI content workspace at Zorvi AI...</p>
+                <button type="button" class="btn-micro">Review</button>
+              </div>
+              <div class="b-draft-pill">
+                <span class="b-platform">𝕏 X Thread</span>
+                <p>1/4 The 9-minute onboarding bottleneck is solved...</p>
+                <button type="button" class="btn-micro">Review</button>
+              </div>
+              <div class="b-draft-pill">
+                <span class="b-platform">🎬 Reel Script</span>
+                <p>[Scene 1] Automated Remotion video storyboard...</p>
+                <button type="button" class="btn-micro">Review</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- MOCKUP VARIANT 4: CINEMATIC CAROUSEL DECK                           -->
+    <!-- ==================================================================== -->
+    <section class="mockup-variant-stage" id="stageVariantCinematic" style="display: none;">
+      <div class="cinematic-deck-container container">
+        
+        <div class="cinematic-deck-card">
+          <div class="deck-topline">
+            <span class="deck-badge">CINEMATIC CAROUSEL • STEP <span id="cinematicStepNum">1</span> OF 5</span>
+            <div class="deck-timer-pill">⚡ 45s Narrative Flow</div>
+          </div>
+
+          <div class="deck-content-area" id="deckContentArea">
+            <span class="deck-eyebrow">YOUR CREATIVE UNIVERSE</span>
+            <h1 class="deck-huge-title" id="deckTitle">Define your brand distribution universe</h1>
+            <p class="deck-desc" id="deckDesc">Select your primary creator archetype to begin crafting omni-channel campaigns.</p>
+
+            <!-- Deck Dynamic Cards Stack -->
+            <div class="deck-cards-carousel" id="deckCardsCarousel">
+              <div class="deck-slide-card active" data-tilt>
+                <div class="card-glow-reflection"></div>
+                <div class="slide-icon">🚀</div>
+                <h3>Solo Creator & Influencer</h3>
+                <p>Designed for fast social hooks, high-retention vertical reels, and viral personal branding.</p>
+                <span class="slide-footer-tag">High Velocity</span>
+              </div>
+              <div class="deck-slide-card" data-tilt>
+                <div class="card-glow-reflection"></div>
+                <div class="slide-icon">⚡</div>
+                <h3>Startup & Growth Team</h3>
+                <p>Built for founders scaling multi-channel inbound reach with B2B LinkedIn and SEO blogs.</p>
+                <span class="slide-footer-tag">Authority Engine</span>
+              </div>
+              <div class="deck-slide-card" data-tilt>
+                <div class="card-glow-reflection"></div>
+                <div class="slide-icon">🏢</div>
+                <h3>Agency Studio</h3>
+                <p>Multi-tenant client governance, approval pipelines, and bulk brand calendars.</p>
+                <span class="slide-footer-tag">Multi-Tenant</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Glass Control Dock -->
+          <div class="deck-floating-dock">
+            <button type="button" class="dock-nav-btn" id="btnDeckPrev" disabled>← Previous</button>
+            <div class="dock-dots-track">
+              <span class="dock-dot active"></span>
+              <span class="dock-dot"></span>
+              <span class="dock-dot"></span>
+              <span class="dock-dot"></span>
+              <span class="dock-dot"></span>
+            </div>
+            <button type="button" class="dock-nav-btn primary" id="btnDeckNext">Next Step →</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- COMPANION VIEW: POST-ONBOARDING ZORVI DASHBOARD                     -->
+    <!-- ==================================================================== -->
+    <section class="mockup-variant-stage" id="stageCompanionDashboard" style="display: none;">
+      <div class="dashboard-shell-layout container">
+        
         <!-- Sidebar Navigation matching real Zorvi App (v1.7.0) -->
-        <aside class="dashboard-sidebar">
-          <div class="sidebar-brand">
-            <div class="brand-monogram sm">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <aside class="zorvi-dash-sidebar">
+          <div class="dash-sidebar-brand">
+            <div class="brand-symbol sm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                 <path d="M4 6L18 6L7 18L21 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
-            <span class="brand-title">Zorvi</span>
+            <span class="dash-brand-name">Zorvi</span>
           </div>
 
-          <nav class="sidebar-menu">
-            <a href="#" class="sidebar-item active">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              <span>Home</span>
-            </a>
-            <a href="#" class="sidebar-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="11" y2="17"/></svg>
-              <span>Agent Library</span>
-            </a>
-            <a href="#" class="sidebar-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/></svg>
-              <span>Brands IQ</span>
-            </a>
-            <a href="#" class="sidebar-item has-submenu">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-              <span>Content</span>
-              <span class="item-badge count">3</span>
-            </a>
-            <a href="#" class="sidebar-item has-submenu">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
-              <span>Studio</span>
-            </a>
-            <a href="#" class="sidebar-item has-submenu">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-              <span>Management</span>
-            </a>
-            <a href="#" class="sidebar-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <span>Email Campaigns</span>
-            </a>
+          <nav class="dash-sidebar-nav">
+            <a href="#" class="d-nav-item active"><span class="nav-ico">🏠</span><span>Home</span></a>
+            <a href="#" class="d-nav-item"><span class="nav-ico">🤖</span><span>Agent Library</span></a>
+            <a href="#" class="d-nav-item"><span class="nav-ico">🧠</span><span>Brands IQ</span></a>
+            <a href="#" class="d-nav-item has-badge"><span class="nav-ico">📝</span><span>Content</span><span class="d-count-badge">3</span></a>
+            <a href="#" class="d-nav-item"><span class="nav-ico">🎬</span><span>Studio (Remotion)</span></a>
+            <a href="#" class="d-nav-item"><span class="nav-ico">⚙️</span><span>Management</span></a>
+            <a href="#" class="d-nav-item"><span class="nav-ico">📧</span><span>Email Campaigns</span></a>
           </nav>
 
-          <div class="sidebar-footer">
-            <div class="user-profile-badge">
-              <div class="user-avatar-sm">ZA</div>
-              <div class="user-info-sm">
-                <span class="user-name">Zorvi AI User</span>
-                <span class="user-role">Admin (v1.7.0)</span>
-              </div>
+          <div class="dash-sidebar-user">
+            <div class="d-user-avatar">ZA</div>
+            <div class="d-user-info">
+              <span class="d-user-name">Zorvi AI User</span>
+              <span class="d-user-ver">Admin (v1.7.0)</span>
             </div>
           </div>
         </aside>
 
-        <!-- Main Dashboard Content Panel -->
-        <div class="dashboard-main-area">
+        <!-- Main Dashboard Viewport -->
+        <div class="zorvi-dash-main">
           <!-- Top Bar -->
-          <div class="dash-topbar">
-            <div class="breadcrumb">
-              <span class="bc-home">🏠</span>
-              <span class="bc-sep">/</span>
-              <span class="bc-current">Home</span>
+          <div class="dash-top-bar">
+            <div class="dash-breadcrumbs">
+              <span>🏠 Home</span>
+              <span>/</span>
+              <span>Content Pipeline</span>
             </div>
-            <div class="dash-top-actions">
-              <div class="token-pill">
-                <span class="token-icon">🪙</span>
-                <span>50k Tokens</span>
-              </div>
-              <button type="button" class="action-icon-btn" title="Refresh">🔄</button>
-              <button type="button" class="action-icon-btn" title="Notifications">🔔<span class="notif-dot"></span></button>
+            <div class="dash-top-tools">
+              <div class="dash-token-counter">🪙 50,000 Tokens</div>
+              <button type="button" class="btn-dash-icon" title="Refresh">🔄</button>
+              <button type="button" class="btn-dash-icon" title="Notifications">🔔<span class="notif-dot"></span></button>
             </div>
           </div>
 
           <!-- Hero Greeting -->
-          <div class="dash-hero">
-            <div class="hero-left">
+          <div class="dash-welcome-hero">
+            <div class="hero-text-col">
               <h2>Good afternoon, Zorvi AI! 👋</h2>
-              <p>Here's what's happening with your content today. Your 3 onboarding assets are staged below!</p>
+              <p>Your 3 onboarding campaign assets are staged and waiting in your Content Pipeline.</p>
             </div>
-            <div class="hero-right">
-              <button type="button" class="btn btn-primary btn-sm" id="btnNewContentModal">
-                <span>+ New Content</span>
-              </button>
+            <button type="button" class="btn-primary-glow" id="btnDashNewContent">+ New Content</button>
+          </div>
+
+          <!-- Pipeline Stats -->
+          <div class="dash-pipeline-metrics">
+            <div class="metric-pipeline-box active-highlight">
+              <span class="p-title">Drafts (Staged)</span>
+              <span class="p-num">3</span>
+              <span class="p-sub">Generated during onboarding</span>
+            </div>
+            <div class="metric-pipeline-box">
+              <span class="p-title">In Review</span>
+              <span class="p-num">0</span>
+              <span class="p-sub">Needs approval</span>
+            </div>
+            <div class="metric-pipeline-box">
+              <span class="p-title">Scheduled</span>
+              <span class="p-num">0</span>
+              <span class="p-sub">Queued to publish</span>
+            </div>
+            <div class="metric-pipeline-box">
+              <span class="p-title">Published</span>
+              <span class="p-num">0</span>
+              <span class="p-sub">Omni-channel total</span>
             </div>
           </div>
 
-          <!-- Content Pipeline Metrics Bar -->
-          <div class="pipeline-row">
-            <div class="pipeline-stat-card highlighted">
-              <div class="stat-top">
-                <span class="stat-title">Drafts</span>
-                <span class="stat-badge-new">3 Staged!</span>
-              </div>
-              <div class="stat-number">3</div>
-              <span class="stat-sub">From 5-step onboarding</span>
-            </div>
-            <div class="pipeline-stat-card">
-              <div class="stat-top">
-                <span class="stat-title">In Review</span>
-              </div>
-              <div class="stat-number">0</div>
-              <span class="stat-sub">Needs approval</span>
-            </div>
-            <div class="pipeline-stat-card">
-              <div class="stat-top">
-                <span class="stat-title">Scheduled</span>
-              </div>
-              <div class="stat-number">0</div>
-              <span class="stat-sub">Queued to publish</span>
-            </div>
-            <div class="pipeline-stat-card">
-              <div class="stat-top">
-                <span class="stat-title">Published</span>
-              </div>
-              <div class="stat-number">0</div>
-              <span class="stat-sub">Across all channels</span>
-            </div>
-          </div>
-
-          <!-- The Active Staged Drafts Section (Value Delivery!) -->
-          <div class="staged-drafts-section">
-            <div class="section-header-row">
-              <div class="section-title-wrap">
-                <span class="sparkle-icon">✨</span>
-                <h3>Your Onboarding Content Pipeline (Ready to Review)</h3>
-              </div>
-              <span class="info-pill">Generated by The Growth Strategist</span>
+          <!-- Live Staged Draft Cards -->
+          <div class="dash-staged-queue-section">
+            <div class="queue-header-flex">
+              <h3>✨ Ready to Review (Generated by The Growth Strategist)</h3>
+              <span class="queue-status-badge">100% On-Brand</span>
             </div>
 
-            <div class="draft-cards-grid">
-              <!-- Card 1 -->
-              <div class="dash-draft-card">
-                <div class="card-channel-header">
-                  <span class="ch-badge linkedin">💼 LinkedIn</span>
-                  <span class="draft-time">Just now</span>
+            <div class="queue-cards-grid">
+              <div class="dash-queue-card">
+                <div class="q-card-top">
+                  <span class="q-chan-badge linkedin">💼 LinkedIn</span>
+                  <span class="q-time">Staged just now</span>
                 </div>
                 <h4>Centralize Your AI Content Workspace</h4>
-                <p class="draft-snippet">Most content creators spend 10+ hours a week juggling 6 disjointed tools just to ship 3 posts. Here's what happens when you centralize...</p>
-                <div class="card-footer-actions">
-                  <button type="button" class="btn-card-action primary">Publish to LinkedIn</button>
-                  <button type="button" class="btn-card-action outline">Edit Draft</button>
+                <p>Most creators spend 10+ hours a week juggling 6 tools. Here's what happens when you centralize with Zorvi AI...</p>
+                <div class="q-card-actions">
+                  <button type="button" class="btn-q-primary">Publish to LinkedIn</button>
+                  <button type="button" class="btn-q-outline">Edit Draft</button>
                 </div>
               </div>
 
-              <!-- Card 2 -->
-              <div class="dash-draft-card">
-                <div class="card-channel-header">
-                  <span class="ch-badge twitter">𝕏 X Thread</span>
-                  <span class="draft-time">Just now</span>
+              <div class="dash-queue-card">
+                <div class="q-card-top">
+                  <span class="q-chan-badge twitter">𝕏 X Thread</span>
+                  <span class="q-time">Staged just now</span>
                 </div>
                 <h4>The 9-Minute Friction Bottleneck (4 Tweets)</h4>
-                <p class="draft-snippet">The biggest bottleneck in modern marketing isn't having ideas — it's the friction between an insight and a published asset. Modern tools optimize for Time to First Magic Moment...</p>
-                <div class="card-footer-actions">
-                  <button type="button" class="btn-card-action primary">Publish to X</button>
-                  <button type="button" class="btn-card-action outline">Edit Thread</button>
+                <p>1/4 The biggest bottleneck in modern marketing is the friction between an idea and a published post...</p>
+                <div class="q-card-actions">
+                  <button type="button" class="btn-q-primary">Publish to X</button>
+                  <button type="button" class="btn-q-outline">Edit Thread</button>
                 </div>
               </div>
 
-              <!-- Card 3 -->
-              <div class="dash-draft-card">
-                <div class="card-channel-header">
-                  <span class="ch-badge instagram">🎬 Instagram Reel</span>
-                  <span class="draft-time">Just now</span>
+              <div class="dash-queue-card">
+                <div class="q-card-top">
+                  <span class="q-chan-badge instagram">🎬 Instagram Reel</span>
+                  <span class="q-time">Staged just now</span>
                 </div>
                 <h4>Remotion Storyboard: Multi-Brand Power</h4>
-                <p class="draft-snippet">[Scene 1] Fast Hook: Why are you still using 5 different tools for your brand? [Scene 2] Split screen showing 10 open tabs vs. 1 Zorvi dashboard...</p>
-                <div class="card-footer-actions">
-                  <button type="button" class="btn-card-action primary">Render Video</button>
-                  <button type="button" class="btn-card-action outline">Edit Script</button>
+                <p>[Scene 1] Fast Hook: Why are you still using 5 tools for your brand? [Scene 2] Split screen comparison...</p>
+                <div class="q-card-actions">
+                  <button type="button" class="btn-q-primary">Render with Remotion</button>
+                  <button type="button" class="btn-q-outline">Edit Script</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Bottom Return to Wizard Banner -->
-          <div class="return-banner">
-            <div class="banner-text">
-              <strong>Need to re-run or test the onboarding flow again?</strong>
-              <span>You can reset the wizard anytime to test different creator archetypes and brand URLs.</span>
+          <!-- Return Banner -->
+          <div class="dash-return-banner">
+            <div>
+              <strong>Want to test or inspect another onboarding design mockup?</strong>
+              <p>You can switch back to any of the 4 mockups or audit screens anytime.</p>
             </div>
-            <button type="button" class="btn btn-secondary btn-sm" id="btnRestartWizard">
-              <span>Restart 5-Step Flow</span>
-            </button>
+            <button type="button" class="btn-action-primary" id="btnDashReturnMockup">Return to Mockups</button>
           </div>
+
         </div>
+
       </div>
     </section>
 
-    <!-- ========================================== -->
-    <!-- VIEW 3: ORIGINAL FLOW AUDIT (33 SCREENS) -->
-    <!-- ========================================== -->
-    <section class="view-panel" id="viewInspector" style="display: none;">
-      <div class="inspector-wrapper container">
-        <div class="inspector-header">
-          <div class="insp-title-row">
-            <span class="eyebrow-tag">FORENSIC VIDEO EXTRACTION</span>
-            <h2>Original Onboarding Flow Audit: All 33 Milestone Screens</h2>
-          </div>
-          <p class="insp-desc">Every single transition, input modal, loading spinner, and question from the 4-minute 25-second walkthrough video has been captured, timestamped, and analyzed below.</p>
-          
-          <!-- Category Filter Pills -->
-          <div class="filter-pills-row" id="filterPillsRow">
-            <button type="button" class="filter-pill active" data-category="all">All Screens (33)</button>
-            <button type="button" class="filter-pill" data-category="Auth">Auth & Entry (3)</button>
-            <button type="button" class="filter-pill" data-category="Intent">Intent & Scale (5)</button>
-            <button type="button" class="filter-pill" data-category="Brand">Brand Extraction (6)</button>
-            <button type="button" class="filter-pill" data-category="Survey Quiz">10-Question Survey (9)</button>
-            <button type="button" class="filter-pill" data-category="Latency Blocker">Blocking Spinners (3)</button>
-            <button type="button" class="filter-pill" data-category="Product Tour">Dashboard Tour (4)</button>
+    <!-- ==================================================================== -->
+    <!-- COMPANION VIEW: ORIGINAL 33-STEP FORENSIC AUDIT                     -->
+    <!-- ==================================================================== -->
+    <section class="mockup-variant-stage" id="stageCompanionAudit" style="display: none;">
+      <div class="audit-gallery-container container">
+        <div class="audit-intro-header">
+          <span class="section-tag">FORENSIC VIDEO EXTRACTION AUDIT</span>
+          <h2>All 33 Original Milestone Screens from Walkthrough Video</h2>
+          <p>Every single frame, modal, 10-question survey item, and latency blocker has been extracted from the 4-minute 25-second recording.</p>
+
+          <div class="audit-filter-pills" id="auditFilterPills">
+            <button type="button" class="a-filter active" data-category="all">All Screens (33)</button>
+            <button type="button" class="a-filter" data-category="Auth">Auth & Entry (3)</button>
+            <button type="button" class="a-filter" data-category="Intent">Intent & Scale (5)</button>
+            <button type="button" class="a-filter" data-category="Brand">Brand DNA (6)</button>
+            <button type="button" class="a-filter" data-category="Survey Quiz">10-Question Survey (9)</button>
+            <button type="button" class="a-filter" data-category="Latency Blocker">Blocking Spinners (3)</button>
+            <button type="button" class="a-filter" data-category="Product Tour">Dashboard Tour (4)</button>
           </div>
         </div>
 
-        <!-- 33 Screenshots Responsive Gallery Grid -->
-        <div class="screenshots-gallery-grid" id="screenshotsGalleryGrid">
+        <div class="audit-grid-gallery" id="auditGridGallery">
           <!-- Populated dynamically by app.js from screenshots/manifest.json -->
         </div>
       </div>
     </section>
 
-    <!-- ========================================== -->
-    <!-- VIEW 4: ROI & METRICS DASHBOARD -->
-    <!-- ========================================== -->
-    <section class="view-panel" id="viewAnalytics" style="display: none;">
-      <div class="analytics-wrapper container">
-        <div class="analytics-header">
-          <span class="eyebrow-tag">PRODUCT ARCHITECTURE IMPACT</span>
-          <h2>Before vs. After: Quantitative ROI Benchmark</h2>
-          <p class="analytics-subtitle">How replacing 14 screens and 10 quiz questions with a 5-step flow drives a 5x increase in onboarding conversion.</p>
+    <!-- ==================================================================== -->
+    <!-- COMPANION VIEW: ROI IMPACT BENCHMARK                                -->
+    <!-- ==================================================================== -->
+    <section class="mockup-variant-stage" id="stageCompanionROI" style="display: none;">
+      <div class="roi-container container">
+        <div class="roi-header">
+          <span class="section-tag">QUANTITATIVE BENCHMARK</span>
+          <h2>Original 14-Stage Flow vs. 5-Step Architecture</h2>
+          <p>Data-backed UX analysis showing how modern onboarding principles drive a 5x conversion lift.</p>
         </div>
 
-        <!-- 4 Key Impact Metric Cards -->
-        <div class="impact-metrics-grid">
-          <div class="metric-card">
-            <div class="metric-icon-box red">⏱️</div>
-            <div class="metric-comparison">
-              <div class="metric-val-old">9 min 30s</div>
-              <div class="metric-arrow">→</div>
-              <div class="metric-val-new">0 min 55s</div>
+        <div class="roi-cards-row">
+          <div class="roi-stat-card">
+            <div class="roi-stat-icon">⏱️</div>
+            <div class="roi-numbers">
+              <span class="old-val">9m 30s</span>
+              <span class="arrow">→</span>
+              <span class="new-val">0m 55s</span>
             </div>
             <h4>Time to First Value</h4>
-            <p>10.3x faster. Users experience real AI generation before fatigue sets in.</p>
-            <span class="gain-badge">+90.3% Faster</span>
+            <p>10.3x faster. Users experience real AI generation before survey fatigue strikes.</p>
+            <span class="roi-pill green">+90.3% Speedup</span>
           </div>
 
-          <div class="metric-card">
-            <div class="metric-icon-box orange">📉</div>
-            <div class="metric-comparison">
-              <div class="metric-val-old">14 Screens</div>
-              <div class="metric-arrow">→</div>
-              <div class="metric-val-new">5 Steps</div>
+          <div class="roi-stat-card">
+            <div class="roi-stat-icon">📉</div>
+            <div class="roi-numbers">
+              <span class="old-val">14 Screens</span>
+              <span class="arrow">→</span>
+              <span class="new-val">5 Steps</span>
             </div>
-            <h4>Total Step Footprint</h4>
-            <p>Unified archetype routing collapses 7 redundant qualification questions.</p>
-            <span class="gain-badge">-64.3% Friction</span>
+            <h4>Screen Footprint</h4>
+            <p>Collapsed 7 redundant qualification questions into 1 smart archetype selector.</p>
+            <span class="roi-pill green">-64.3% Fewer Steps</span>
           </div>
 
-          <div class="metric-card">
-            <div class="metric-icon-box green">⏳</div>
-            <div class="metric-comparison">
-              <div class="metric-val-old">180s Blocker</div>
-              <div class="metric-arrow">→</div>
-              <div class="metric-val-new">0s (Async)</div>
+          <div class="roi-stat-card">
+            <div class="roi-stat-icon">⏳</div>
+            <div class="roi-numbers">
+              <span class="old-val">180s Blocker</span>
+              <span class="arrow">→</span>
+              <span class="new-val">0s (Async)</span>
             </div>
             <h4>Blocking Wait Latency</h4>
-            <p>Zero dead waiting time staring at scraping progress bars. Optimistic UI instantly.</p>
-            <span class="gain-badge">100% Blocker Free</span>
+            <p>Eliminated the 3-minute synchronous website scraping progress bar.</p>
+            <span class="roi-pill green">100% Blocker-Free</span>
           </div>
 
-          <div class="metric-card">
-            <div class="metric-icon-box purple">🚀</div>
-            <div class="metric-comparison">
-              <div class="metric-val-old">0 Drafts</div>
-              <div class="metric-arrow">→</div>
-              <div class="metric-val-new">3 Drafts</div>
+          <div class="roi-stat-card">
+            <div class="roi-stat-icon">✨</div>
+            <div class="roi-numbers">
+              <span class="old-val">0 Drafts</span>
+              <span class="arrow">→</span>
+              <span class="new-val">3 Drafts</span>
             </div>
-            <h4>Initial Assets Generated</h4>
-            <p>User arrives at a live, pre-populated pipeline with LinkedIn, X, and Reel content.</p>
-            <span class="gain-badge">Instant Payoff</span>
-          </div>
-        </div>
-
-        <!-- Detailed Comparison Table -->
-        <div class="comparison-table-card">
-          <h3>Architectural Comparison Matrix</h3>
-          <div class="table-responsive">
-            <table class="benchmark-table">
-              <thead>
-                <tr>
-                  <th>Onboarding Dimension</th>
-                  <th>Original Flow (From Video)</th>
-                  <th>Optimized 5-Step Architecture</th>
-                  <th>Strategic Impact</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>User Archetype & Scale</strong></td>
-                  <td>5 separate screens (Focus, Deliverables, Account, Role, Team Size). 20+ clicks.</td>
-                  <td>1 unified Archetype Card (Step 1) with 1-click smart defaults.</td>
-                  <td>Eliminates 80% of upfront administrative clicks.</td>
-                </tr>
-                <tr>
-                  <td><strong>Brand Extraction</strong></td>
-                  <td>Blocking 3-minute progress bar ("Estimated time: 3m 0s"). User trapped waiting.</td>
-                  <td>Instant optimistic extraction with live swatches & font pairings (Step 2). Background async sync.</td>
-                  <td>Stops over 50% of users from abandoning the tab during scraper delay.</td>
-                </tr>
-                <tr>
-                  <td><strong>Audience Demographics</strong></td>
-                  <td>10 sequential micro-questions (1/10 to 10/10) with progress frozen at 82%.</td>
-                  <td>Interactive Audience & Tone Matrix (Step 3) with dynamic visual slider.</td>
-                  <td>Eliminates survey fatigue; users feel empowered rather than interrogated.</td>
-                </tr>
-                <tr>
-                  <td><strong>Creative Configuration</strong></td>
-                  <td>18 competitor tool badges (Buffer, Hootsuite) + team invite hurdle.</td>
-                  <td>Choice of 3 specialized AI Copilots (Step 4: Growth, Storyteller, Authority).</td>
-                  <td>Transforms dry tool checklist into an exciting creative team setup.</td>
-                </tr>
-                <tr>
-                  <td><strong>The "First Magic Moment"</strong></td>
-                  <td>Empty dashboard with zeros (0 Drafts) + annoying 9-step modal tour overlay.</td>
-                  <td>Live interactive synthesis of 3 publish-ready posts staged in pipeline (Step 5).</td>
-                  <td>Dopamine payoff: user sees their own brand content before touching the dashboard.</td>
-                </tr>
-              </tbody>
-            </table>
+            <h4>Initial Assets Staged</h4>
+            <p>User arrives at a pre-populated workspace instead of an empty screen.</p>
+            <span class="roi-pill green">Instant Magic Payoff</span>
           </div>
         </div>
       </div>
@@ -1003,48 +1155,50 @@
 
   </main>
 
-  <!-- Fullscreen Lightbox Modal for Original Screenshot Inspection -->
-  <div class="modal-overlay" id="screenshotModalOverlay" style="display: none;">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <div class="modal-title-meta">
-          <span class="modal-step-id" id="modalStepId">Step 03</span>
-          <h3 id="modalStepTitle">Screen Title</h3>
-          <span class="modal-timestamp" id="modalTimestamp">00:30 (9% Complete)</span>
+  <!-- Fullscreen Lightbox Modal for 33 Original Screenshots -->
+  <div class="lightbox-modal-backdrop" id="auditModalBackdrop" style="display: none;">
+    <div class="lightbox-modal-dialog">
+      <div class="modal-top-bar">
+        <div class="modal-meta-row">
+          <span class="modal-badge-id" id="modalStepIdBadge">STEP 03</span>
+          <h3 id="modalScreenTitle">Screen Title</h3>
+          <span class="modal-timestamp-tag" id="modalTimestampTag">00:30 (9% Complete)</span>
         </div>
-        <button type="button" class="modal-close-btn" id="modalCloseBtn">&times;</button>
+        <button type="button" class="modal-dismiss-btn" id="btnDismissModal">&times;</button>
       </div>
-      <div class="modal-body">
-        <div class="modal-img-container">
-          <img id="modalImg" src="" alt="Screenshot of original step" class="modal-full-img">
+
+      <div class="modal-inner-content">
+        <div class="modal-img-frame">
+          <img id="modalViewerImg" src="" alt="Screenshot of original step">
         </div>
-        <div class="modal-details-pane">
-          <div class="pane-sec">
-            <label>Observed UI & Elements</label>
-            <p id="modalDesc">Description text here.</p>
+        <div class="modal-analysis-column">
+          <div class="analysis-box">
+            <label>Observed UI & Form Elements</label>
+            <p id="modalObservedDesc">Description of observed screen.</p>
           </div>
-          <div class="pane-sec">
-            <label>UX Friction Analysis</label>
-            <p id="modalFriction">Friction diagnostic.</p>
+          <div class="analysis-box friction">
+            <label>UX Friction Diagnostic</label>
+            <p id="modalFrictionDesc">Why this caused user drop-off.</p>
           </div>
-          <div class="pane-sec">
+          <div class="analysis-box solution">
             <label>How It Was Solved in 5-Step Flow</label>
-            <p id="modalSolution">Optimized solution explanation.</p>
+            <p id="modalSolutionDesc">Redesign architectural solution.</p>
           </div>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline" id="modalPrevBtn">Previous Screen</button>
-        <span class="modal-counter" id="modalCounter">3 of 33</span>
-        <button type="button" class="btn btn-primary" id="modalNextBtn">Next Screen</button>
+
+      <div class="modal-bottom-bar">
+        <button type="button" class="btn-modal-nav" id="btnModalPrev">← Previous Screen</button>
+        <span class="modal-page-count" id="modalPageCount">3 of 33</span>
+        <button type="button" class="btn-modal-nav" id="btnModalNext">Next Screen →</button>
       </div>
     </div>
   </div>
 
-  <!-- Toast Notification Container -->
-  <div class="toast-container" id="toastContainer"></div>
+  <!-- Toast Notification Hub -->
+  <div class="toast-hub" id="toastHub"></div>
 
-  <!-- App Script -->
+  <!-- Core App Logic -->
   <script src="app.js"></script>
 </body>
 </html>
